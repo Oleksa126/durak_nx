@@ -1,0 +1,458 @@
+--- a/source/libc_shim.c
++++ b/source/libc_shim.c
+@@ -786,16 +786,17 @@
+   }
+ 
+   char resolved[512];
++  char alt[320];
+   const char *rpath = durak_resolve_path(path, resolved, sizeof(resolved), writing);
+   if (!rpath) rpath = path;
+ 
+   if (writing) mkdir_parents(rpath);
+ 
+   int fd = open(rpath, cvt, mode);
+-  int err = (fd < 0) ? errno : 0;
++  int err = errno;
++  Result open_result = fd < 0 ? fsdevGetLastResult() : 0;
+ 
+   if (fd < 0 && !writing && !(flags & LINUX_O_CREAT)) {
+-    char alt[320];
+     if (basename_fallback(path, alt, sizeof(alt))) {
+       fd = open(alt, cvt, mode);
+       if (fd >= 0) {
+@@ -828,6 +829,10 @@
+     durak_log_printf("[io] open(\"%s\" -> \"%s\", flags=0x%x) -> fd=-1 (errno=%d: %s)\n",
+                      path, rpath, flags, err, strerror(err));
+   }
++  if (strstr(path, ".bytes") || strstr(path, ".db"))
++    durak_log_printf("[io] open flags: path=%s guest=0x%x host=0x%x fd=%d errno=%d result=0x%x\n",
++                     path, flags, cvt, fd, fd < 0 ? err : 0, open_result);
++  errno = err;
+   return fd;
+ }
+ 
+@@ -962,6 +967,45 @@
+   out->st_atim.tv_sec = in->st_atime; out->st_mtim.tv_sec = in->st_mtime; out->st_ctim.tv_sec = in->st_ctime;
+ }
+ 
++/* fsdev_stat opens a second read handle to obtain size. Horizon rejects that
++ * while SQLite holds a write handle. Read the actual directory entry instead;
++ * never substitute cached fd data for a path that may have disappeared. */
++static int stat_directory_entry(const char *path, struct stat *st) {
++  char native[FS_MAX_PATH];
++  FsFileSystem *fs = NULL;
++  if (fsdevTranslatePath(path, &fs, native) != 0) return -1;
++  char *slash = strrchr(native, '/');
++  if (!slash || !slash[1]) { errno = EINVAL; return -1; }
++  char name[FS_MAX_PATH];
++  snprintf(name, sizeof(name), "%s", slash + 1);
++  if (slash == native) slash[1] = 0; else *slash = 0;
++  FsDir dir;
++  Result rc = fsFsOpenDirectory(fs, native, FsDirOpenMode_ReadFiles, &dir);
++  if (R_FAILED(rc)) {
++    durak_log_printf("[io] stat directory open failed: path=%s result=0x%x\n", path, rc);
++    errno = EIO; return -1;
++  }
++  FsDirectoryEntry entry;
++  s64 count = 0;
++  int found = 0;
++  while (R_SUCCEEDED(rc = fsDirRead(&dir, &count, 1, &entry)) && count) {
++    if (strcmp(entry.name, name)) continue;
++    memset(st, 0, sizeof(*st));
++    st->st_mode = S_IFREG | 0666;
++    st->st_nlink = 1;
++    st->st_size = entry.file_size;
++    found = 1;
++    break;
++  }
++  fsDirClose(&dir);
++  if (R_FAILED(rc)) {
++    durak_log_printf("[io] stat directory read failed: path=%s result=0x%x\n", path, rc);
++    errno = EIO; return -1;
++  }
++  if (!found) { errno = ENOENT; return -1; }
++  return 0;
++}
++
+ int stat_fake(const char *path, struct bionic_stat *st) {
+   if (!path || !st) { errno = EINVAL; return -1; }
+   char resolved[512];
+@@ -969,11 +1013,20 @@
+   if (!rpath) rpath = path;
+ 
+   struct stat real;
++  char alt[320];
+   int r = stat(rpath, &real);
+   int err = (r != 0) ? errno : 0;
+ 
++  if (r != 0 && err == EIO && !strncmp(rpath, "sdmc:/", 6)) {
++    Result native_error = fsdevGetLastResult();
++    r = stat_directory_entry(rpath, &real);
++    int fallback_error = r ? errno : 0;
++    durak_log_printf("[io] stat metadata: path=%s errno=%d result=0x%x -> rc=%d errno=%d\n",
++                     rpath, err, native_error, r, fallback_error);
++    err = fallback_error;
++  }
++
+   if (r != 0) {
+-    char alt[320];
+     if (basename_fallback(path, alt, sizeof(alt))) {
+       r = stat(alt, &real);
+       if (r == 0) {
+@@ -995,6 +1048,7 @@
+     durak_log_printf("[io] stat(\"%s\" -> \"%s\") -> -1 (errno=%d: %s)\n",
+                      path, rpath, err, strerror(err));
+   }
++  if (r != 0) errno = err;
+   return r;
+ }
+ int fstat_fake(int fd, struct bionic_stat *st) {
+@@ -2195,6 +2249,57 @@
+ }
+ int dlclose_fake(void *h) { (void)h; return 0; }
+ const char *dlerror_fake(void) { return NULL; }
++
++/* Observe managed SQLite P/Invokes at their exported C ABI. Return every real
++ * result unchanged, including extended errors; do not alter DB configuration. */
++static void sqlite_diagnostic(void *db, const char *operation, const char *sql, int rc, int saved_errno) {
++  int (*extended)(void *) = so_resolve_external("sqlite3_extended_errcode");
++  const char *(*message)(void *) = so_resolve_external("sqlite3_errmsg");
++  const char *(*filename)(void *, const char *) = so_resolve_external("sqlite3_db_filename");
++  durak_log_printf("[sqlite] %s db=%p file=%s rc=%d extended=%d errno=%d message=%s sql=%.512s\n",
++                   operation, db, db && filename ? filename(db, "main") : "?", rc,
++                   db && extended ? extended(db) : rc, saved_errno,
++                   db && message ? message(db) : "?", sql ? sql : "");
++  errno = saved_errno;
++}
++static int sqlite_open_diag(const char *path, void **db) {
++  int (*fn)(const char *, void **) = so_resolve_external("sqlite3_open");
++  int rc = fn(path, db), saved = errno;
++  sqlite_diagnostic(db ? *db : NULL, "open", path, rc, saved);
++  return rc;
++}
++static int sqlite_open_v2_diag(const char *path, void **db, int flags, const char *vfs) {
++  int (*fn)(const char *, void **, int, const char *) = so_resolve_external("sqlite3_open_v2");
++  int rc = fn(path, db, flags, vfs), saved = errno;
++  durak_log_printf("[sqlite] open_v2 flags=0x%x vfs=%s\n", flags, vfs ? vfs : "default");
++  sqlite_diagnostic(db ? *db : NULL, "open_v2", path, rc, saved);
++  return rc;
++}
++static int sqlite_prepare_v2_diag(void *db, const char *sql, int len, void **stmt, const char **tail) {
++  int (*fn)(void *, const char *, int, void **, const char **) = so_resolve_external("sqlite3_prepare_v2");
++  int rc = fn(db, sql, len, stmt, tail), saved = errno;
++  if (rc) {
++    char query[513];
++    size_t limit = len < 0 ? 512 : (len < 512 ? (size_t)len : 512);
++    size_t n = sql ? strnlen(sql, limit) : 0;
++    if (n) memcpy(query, sql, n);
++    query[n] = 0;
++    sqlite_diagnostic(db, "prepare_v2", query, rc, saved);
++  }
++  errno = saved;
++  return rc;
++}
++static int sqlite_step_diag(void *stmt) {
++  int (*fn)(void *) = so_resolve_external("sqlite3_step");
++  void *(*handle)(void *) = so_resolve_external("sqlite3_db_handle");
++  const char *(*sql_fn)(void *) = so_resolve_external("sqlite3_sql");
++  int rc = fn(stmt), saved = errno;
++  const char *sql = sql_fn ? sql_fn(stmt) : NULL;
++  if ((rc != 100 && rc != 101) || (sql && !strncasecmp(sql, "create", 6)))
++    sqlite_diagnostic(handle ? handle(stmt) : NULL, "step", sql, rc, saved);
++  errno = saved;
++  return rc;
++}
+ void *dlsym_fake(void *handle, const char *symbol) {
+   (void)handle;
+   if (!symbol) return NULL;
+@@ -2202,7 +2307,13 @@
+   extern void *firebase_stub_lookup(const char *symbol);
+   /* 1) a real export from a loaded module (il2cpp/unity/main) */
+   void *p = so_resolve_external(symbol);
+-  if (p) return p;
++  if (p) {
++    if (!strcmp(symbol, "sqlite3_open")) return (void *)&sqlite_open_diag;
++    if (!strcmp(symbol, "sqlite3_open_v2")) return (void *)&sqlite_open_v2_diag;
++    if (!strcmp(symbol, "sqlite3_prepare_v2")) return (void *)&sqlite_prepare_v2_diag;
++    if (!strcmp(symbol, "sqlite3_step")) return (void *)&sqlite_step_diag;
++    return p;
++  }
+   /* 2) one of our libc/GLES/EGL shims (the engine dlopen()s libGLESv2.so etc.
+    *    and dlsym()s glGetString/glGetIntegerv, which are shims, not exports) */
+   uintptr_t shim = dynlib_find_export(symbol);
+--- a/source/imports.c
++++ b/source/imports.c
+@@ -425,7 +425,15 @@
+ static int chmod_stub(const char *path, int mode) { (void)path; (void)mode; return 0; }
+ static int truncate_stub(const char *path, long len) { (void)path; (void)len; return 0; }
+ static int ftruncate_stub(int fd, long len) { return ftruncate(fd, (off_t)len); }
+-static int fsync_stub(int fd) { int r = fsync(fd); fsdevCommitDevice("sdmc"); return r; }
++static int fsync_stub(int fd) {
++  int r = fsync(fd), saved = errno;
++  Result commit = fsdevCommitDevice("sdmc");
++  if (r < 0 || R_FAILED(commit))
++    durak_log_printf("[io] fsync fd=%d rc=%d errno=%d commit=0x%x\n", fd, r, saved, commit);
++  if (r == 0 && R_FAILED(commit)) { r = -1; saved = EIO; }
++  errno = saved;
++  return r;
++}
+ static int dup2_stub(int a, int b) { (void)a; return b; }
+ static long pread_impl(int fd, void *buf, size_t n, long off) {
+   long cur = lseek(fd, 0, SEEK_CUR);
+@@ -446,7 +454,9 @@
+   if (cur < 0) return -1;
+   if (lseek(fd, off, SEEK_SET) < 0) return -1;
+   long r = write(fd, buf, n);
+-  lseek(fd, cur, SEEK_SET);
++  int saved = errno;
++  if (lseek(fd, cur, SEEK_SET) < 0 && r >= 0) return -1;
++  errno = saved;
+   return r;
+ }
+ static int uname_fake(void *buf) { if (buf) memset(buf, 0, 390); return 0; }
+--- /dev/null
++++ b/tests/test_single_game_stat.py
+@@ -0,0 +1,79 @@
++"""Compile the production metadata lookup against fault-injected Horizon calls.
++
++Run on Linux with: python3 -m unittest tests.test_single_game_stat
++No SD files or user databases are modified.
++"""
++import pathlib
++import subprocess
++import tempfile
++import unittest
++
++
++class DirectoryStatTest(unittest.TestCase):
++    def test_metadata_and_failures(self):
++        source = pathlib.Path('source/libc_shim.c').read_text()
++        start = source.index('static int stat_directory_entry(')
++        helper = source[start:source.index('\nint stat_fake(', start)]
++        harness = r'''
++#include <assert.h>
++#include <errno.h>
++#include <stdint.h>
++#include <stdio.h>
++#include <string.h>
++#include <sys/stat.h>
++typedef unsigned Result;
++typedef long long s64;
++typedef struct { int dummy; } FsFileSystem;
++typedef struct { int dummy; } FsDir;
++typedef struct { char name[256]; s64 file_size; } FsDirectoryEntry;
++#define FS_MAX_PATH 768
++#define FsDirOpenMode_ReadFiles 2
++#define R_FAILED(x) ((x) != 0)
++#define R_SUCCEEDED(x) ((x) == 0)
++static int scenario, reads, closes;
++static char parent[768];
++static FsFileSystem fs;
++static void durak_log_printf(const char *fmt, ...) { errno = EDOM; }
++static int fsdevTranslatePath(const char *p, FsFileSystem **f, char *out) {
++  if (scenario == 4) { errno = ENODEV; return -1; }
++  *f = &fs; strcpy(out, p + 5); return 0;
++}
++static Result fsFsOpenDirectory(FsFileSystem *f, const char *p, int mode, FsDir *d) {
++  assert(f == &fs && mode == 2); strcpy(parent, p);
++  return scenario == 1 ? 0xe02 : 0;
++}
++static Result fsDirRead(FsDir *d, s64 *count, int n, FsDirectoryEntry *e) {
++  assert(n == 1);
++  if (scenario == 2) return 0xe02;
++  *count = reads++ < 2;
++  strcpy(e->name, reads == 1 ? "unrelated.bytes" : "metrics.bytes");
++  if (scenario == 3) strcpy(e->name, "missing.bytes");
++  e->file_size = 24576; return 0;
++}
++static void fsDirClose(FsDir *d) { closes++; errno = EDOM; }
++'''
++        main = r'''
++int main(void) {
++  struct stat st;
++  assert(stat_directory_entry("sdmc:/switch/durak_nx/metrics.bytes", &st) == 0);
++  assert(st.st_size == 24576 && S_ISREG(st.st_mode) && st.st_nlink == 1);
++  assert(!strcmp(parent, "/switch/durak_nx") && closes == 1);
++  for (scenario = 1; scenario <= 4; scenario++) {
++    reads = closes = 0;
++    assert(stat_directory_entry("sdmc:/metrics.bytes", &st) == -1);
++    assert(errno == (scenario == 3 ? ENOENT : scenario == 4 ? ENODEV : EIO));
++    assert(closes == (scenario == 2 || scenario == 3));
++    if (scenario != 4) assert(!strcmp(parent, "/"));
++  }
++  scenario = reads = closes = 0;
++  assert(stat_directory_entry("sdmc:/", &st) == -1 && errno == EINVAL);
++  assert(closes == 0);
++}
++'''
++        with tempfile.TemporaryDirectory() as tmp:
++            c = pathlib.Path(tmp) / 'stat_test.c'
++            exe = pathlib.Path(tmp) / 'stat_test'
++            c.write_text(harness + helper + main)
++            subprocess.run(['cc', '-Wall', '-Wextra', '-Wno-unused-parameter',
++                            str(c), '-o', str(exe)], check=True)
++            subprocess.run([str(exe)], check=True)
+--- /dev/null
++++ b/scripts/inspect_single_game_assets.py
+@@ -0,0 +1,89 @@
++"""Read-only serialized DB bindings; requires UnityPy (analysis only)."""
++import argparse
++import json
++import sqlite3
++import struct
++import sys
++from pathlib import Path
++import UnityPy
++from UnityPy.classes import PPtr
++from elftools.elf.elffile import ELFFile
++
++sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
++from metadata_v39 import Il2CppMetadataV39
++
++meta = Il2CppMetadataV39(Path('extracted_durak/global-metadata.dat').read_bytes())
++with open('extracted_durak/libil2cpp.so', 'rb') as stream:
++    elf = ELFFile(stream)
++    rels = {r['r_offset']: r['r_addend'] for r in
++            elf.get_section_by_name('.rela.dyn').iter_relocations()}
++    ro = elf.get_section_by_name('.rodata')
++
++    def read_va(va, size):
++        for seg in elf.iter_segments():
++            if seg['p_type'] == 'PT_LOAD' and seg['p_vaddr'] <= va and va + size <= seg['p_vaddr'] + seg['p_filesz']:
++                stream.seek(seg['p_offset'] + va - seg['p_vaddr'])
++                return stream.read(size)
++        raise ValueError(f'Unmapped VA {va:x}')
++
++    for image in meta.get_images():
++        if image['name'] not in {'Assembly-CSharp.dll', 'SimpleSQL_Runtime.dll'}:
++            continue
++        position = ro.data().find(image['name'].encode() + b'\0')
++        assert position >= 0
++        name_va = ro['sh_addr'] + position
++        cgm = next(address for address, value in rels.items() if value == name_va)
++        # Il2CppCodeGenModule: name @0, count @8, methodPointers @16.
++        count = struct.unpack_from('<I', read_va(cgm, 32), 8)[0]
++        pointers = rels[cgm + 16]
++        assert cgm and pointers and count
++        print('CodeGenModule', image['name'], hex(cgm), hex(pointers), count)
++        types = meta.get_type_definitions()[image['type_start']:image['type_start'] + image['type_count']]
++        for typ in types:
++            if typ['name'] == 'single_stats':
++                print('table type:', typ['namespace'], typ['name'])
++            if typ['name'] not in {'DataManager', 'SinglePlayerSelect', 'SimpleSQLManager'}:
++                continue
++            for method in meta.get_methods_for_type(typ):
++                if method['name'] in {'Awake', 'Initialize', 'UpdateDatabaseStructure',
++                                      'DetectTables', 'CreateTable', 'OnEnable', 'redrawGameList'}:
++                    assert 1 <= method['rid'] <= count
++                    print(typ['name'], method['name'], hex(rels.get(pointers + 8 * (method['rid'] - 1), 0)))
++
++parser = argparse.ArgumentParser()
++parser.add_argument('bundle', nargs='?', default=
++                    'extracted_durak/sdmc/switch/durak_nx/assets/bin/Data/data.unity3d')
++args = parser.parse_args()
++env = UnityPy.load(args.bundle)
++for obj in env.objects:
++    if obj.type.name == 'MonoBehaviour':
++        behaviour = obj.read(check_read=False)
++        try:
++            name = behaviour.m_Script.read().m_ClassName
++        except (AttributeError, KeyError, ValueError):
++            continue
++        if name in {'SinglePlayerSelect', 'SimpleSQLManager', 'DataManager'}:
++            print(name, obj.assets_file.name, obj.path_id)
++            print(json.dumps(obj.read_typetree(check_read=False), ensure_ascii=True))
++            raw = obj.get_raw_data()
++            print('serialized prefix (96 bytes):', raw[:96].hex())
++            if name == 'SimpleSQLManager':
++                # _db is private/nonserialized; databaseFile is first saved field.
++                file_id, path_id = struct.unpack_from('<iq', raw, 32)
++                target = PPtr(m_FileID=file_id, m_PathID=path_id,
++                              assetsfile=obj.assets_file).read()
++                print('databaseFile:', target.m_Name)
++            elif name == 'DataManager':
++                length = struct.unpack_from('<I', raw, 32)[0]
++                print('dataTypesNamespace:', raw[36:36+length].decode('ascii'))
++    elif obj.type.name == 'TextAsset':
++        asset = obj.read()
++        if asset.m_Name == 'metrics':
++            raw = asset.m_Script
++            if isinstance(raw, str):
++                raw = raw.encode('utf8', errors='surrogateescape')
++            db = sqlite3.connect(':memory:')
++            db.deserialize(raw)
++            print('metrics asset schema:', db.execute(
++                'SELECT name, sql FROM sqlite_master ORDER BY name').fetchall())
++            db.close()
+--- /dev/null
++++ b/docs/SINGLE_GAME_SQLITE_REVIEW.md
+@@ -0,0 +1,69 @@
++# Single Game: SQLite initialization fix, 2026-10-02
++
++Scope: incremental changes over the existing Gemini worktree. Review-only patch
++is `docs/single_game_fix.patch`; no commits or user DB modifications.
++
++## Evidence
++
++- Input: `C:/Users/oleks/AppData/Local/Temp/durak_nx (17).log`.
++- Serialized `level1`: DataManager 46 and SimpleSQLManager 47 share GameObject 2.
++  Their saved fields select namespace `MetricsTypes` and TextAsset `metrics`.
++  Metadata places `single_stats` in namespace `MetricsTypes`. Thus its database
++  is `/switch/durak_nx/metrics.bytes`, mapped to
++  `sdmc:/switch/durak_nx/metrics.bytes`, not `data.db`.
++- Original metrics asset is a 24576-byte SQLite DB; its sqlite_master has no
++  single_stats table. The game owns schema migration and table creation.
++- Target code registration (resolved from relocations, not donor addresses):
++  Assembly-CSharp module `0x1b0d0e0`, pointers `0x1c3b158`, 2865 methods;
++  SimpleSQL_Runtime module `0x1bb7778`, pointers `0x1d6c330`, 304 methods.
++  DataManager.Awake `0xd4733c` invokes InitializeDatabaseInfo `0xd474a8`,
++  DetectTables `0xd476e8`, UpdateDatabaseVariables `0xd47af0`, then
++  UpdateDatabaseStructure `0xd48178`. That function calls CreateTable
++  `0xd49fa8` at `0xd48688` / `0xd488fc`; it also calls SimpleSQLManager.Execute
++  `0x1210a7c` at `0xd48668`. No table schema is injected by the wrapper.
++- Log line 1871: metrics open succeeds with Android flags `0xa0042`
++  (RDWR|CREAT|NOFOLLOW|CLOEXEC). Access mode/CREAT are translated to newlib
++  RDWR|CREAT. There is no read-only retry in the log. Later stat of the open
++  file returns EIO; ReadOnly follows at 1895 and again at 2102. Similar failure
++  occurs for l10n and dict. No SQLite journal open is attempted at that point.
++- libnx fsdev_stat gets file size by opening another read handle:
++  https://github.com/switchbrew/libnx/blob/master/nx/source/runtime/devices/fs_dev.c
++  (fsdev_stat). This conflicts with the live writer on Horizon. Target SQLite's
++  stat dispatch relocation is `0x1c4790`; file-control code at `0x43230` calls
++  stat at `0x43248`, treats failure as moved (`0x43250`), and otherwise compares
++  inode at `0x43424..0x43434`. This explains a writable DB becoming unwritable
++  before journal creation. The exact extended SQLite error was not logged by
++  build 17; the new diagnostics must confirm it on hardware.
++
++Reproduce asset/metadata evidence with `python scripts/inspect_single_game_assets.py`
++(requires UnityPy, pyelftools, capstone). Analysis reads the bundle and deserializes
++the original metrics DB into memory only.
++
++## Changes and checks
++
++- On sdmc stat EIO, obtain size/type from the real directory entry without
++  another file handle. Missing entries remain ENOENT; failed FS queries remain
++  errors. Log original errno/native Result and recovery result.
++- Preserve open/stat/pwrite/fsync errno across logging, seeking and commit;
++  expose failed commits. SQLite open/prepare_v2/step diagnostics forward the
++  original return value and capture filename, SQL, errno, extended code/message.
++- Fault-injection test covers valid entry, unrelated entry, root parent, missing
++  file, directory open/read failures, path translation failure and handle closure.
++  `python3 -m unittest tests.test_single_game_stat` passed in devkitA64 container.
++- Pinned `scripts/build_nro.ps1` build passed; native target/loader checks and
++  12 Python loader checks passed. Existing unrelated compiler warnings remain.
++
++## Remaining gate: NEEDS_HARDWARE_TEST
++
++Install the rebuilt root durak_nx.nro at `/switch/durak_nx/durak_nx.nro`; keep all
++existing databases. Launch, open Single Game and choose a mode. New log should
++show successful schema CREATE (SQLite step 101), journal creation with writable
++host flags, and no ReadOnly/no-such-table errors. Extended codes remain visible
++if initialization still fails. No hardware success is claimed.
++
++If the list remains empty after schema creation, use the fresh click log to
++localize the surviving NullReferenceException. Static entry path is
++SinglePlayerSelect.OnEnable `0xd7ae44` -> redrawGameList `0xd79430` (call at
++`0xd7af78`). Build 17 has several unqualified NRE messages, so none can yet be
++assigned to a particular dereference after this fix. Do not replace them with
++blanket stubs. Completion requires modes visible and one selectable on Switch.

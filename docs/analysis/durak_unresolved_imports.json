@@ -1,0 +1,6435 @@
+{
+  "summary": {
+    "total_modules": 4,
+    "load_order": [
+      "libsqlite3.so",
+      "libmain.so",
+      "libunity.so",
+      "libil2cpp.so"
+    ],
+    "total_exported_symbols": 2805,
+    "cross_module_resolved_count": 0,
+    "shims_enabled": true,
+    "available_shim_symbols_count": 79,
+    "registered_shim_symbols_count": 79,
+    "external_resolved_count": 127,
+    "unresolved_strong_count": 631,
+    "unresolved_weak_count": 4,
+    "wx_overall_compliant": true,
+    "total_wx_violations": 0,
+    "categorized_unresolved_strong": {
+      "libc_stdio_fs": 92,
+      "other_bionic_or_sdk": 196,
+      "libc_system_posix": 78,
+      "libc_mem_string": 71,
+      "libc_pthread": 83,
+      "libdl": 18,
+      "libc_sockets": 39,
+      "libEGL": 20,
+      "libandroid": 31,
+      "libz": 3
+    }
+  },
+  "wx_results": [
+    {
+      "module": "libsqlite3.so",
+      "total_pages": 464,
+      "rx_pages": 429,
+      "rw_pages": 4,
+      "ro_pages": 31,
+      "wx_violations_count": 0,
+      "wx_violation_addresses": [],
+      "wx_compliant": true
+    },
+    {
+      "module": "libmain.so",
+      "total_pages": 16,
+      "rx_pages": 1,
+      "rw_pages": 1,
+      "ro_pages": 14,
+      "wx_violations_count": 0,
+      "wx_violation_addresses": [],
+      "wx_compliant": true
+    },
+    {
+      "module": "libunity.so",
+      "total_pages": 5580,
+      "rx_pages": 3915,
+      "rw_pages": 369,
+      "ro_pages": 1296,
+      "wx_violations_count": 0,
+      "wx_violation_addresses": [],
+      "wx_compliant": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "total_pages": 8192,
+      "rx_pages": 4061,
+      "rw_pages": 974,
+      "ro_pages": 3157,
+      "wx_violations_count": 0,
+      "wx_violation_addresses": [],
+      "wx_compliant": true
+    }
+  ],
+  "modules": [
+    {
+      "module": "libsqlite3.so",
+      "path": "extracted_durak\\libsqlite3.so",
+      "base_address": "0x7000000000",
+      "load_bias": "0x7000000000",
+      "min_vaddr": "0x0",
+      "load_size": "0x1d0000",
+      "max_align": "0x10000",
+      "segments_count": 2,
+      "pt_load_segments": [
+        {
+          "vaddr": "0x0",
+          "mapped_start": "0x7000000000",
+          "mapped_end": "0x70001acf48",
+          "filesz": "0x1acf48",
+          "memsz": "0x1acf48",
+          "bss_size": "0x0",
+          "align": "0x10000",
+          "flags": "RX"
+        },
+        {
+          "vaddr": "0x1bdc00",
+          "mapped_start": "0x70001bdc00",
+          "mapped_end": "0x70001c71f0",
+          "filesz": "0x8860",
+          "memsz": "0x95f0",
+          "bss_size": "0xd90",
+          "align": "0x10000",
+          "flags": "RW"
+        }
+      ],
+      "has_gnu_relro": true,
+      "init_array_count": 0,
+      "needed_libraries": [
+        "libdl.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so"
+      ],
+      "relocations_count": 3057,
+      "relocations_by_type": {
+        "R_AARCH64_RELATIVE": 2106,
+        "R_AARCH64_ABS64": 623,
+        "R_AARCH64_GLOB_DAT": 79,
+        "R_AARCH64_JUMP_SLOT": 249
+      },
+      "exported_symbols_count": 686,
+      "imported_symbols_count": 90
+    },
+    {
+      "module": "libmain.so",
+      "path": "extracted_durak\\libmain.so",
+      "base_address": "0x70001d0000",
+      "load_bias": "0x70001d0000",
+      "min_vaddr": "0x0",
+      "load_size": "0x10000",
+      "max_align": "0x4000",
+      "segments_count": 4,
+      "pt_load_segments": [
+        {
+          "vaddr": "0x0",
+          "mapped_start": "0x70001d0000",
+          "mapped_end": "0x70001d0a20",
+          "filesz": "0xa20",
+          "memsz": "0xa20",
+          "bss_size": "0x0",
+          "align": "0x4000",
+          "flags": "R"
+        },
+        {
+          "vaddr": "0x4a20",
+          "mapped_start": "0x70001d4a20",
+          "mapped_end": "0x70001d4f20",
+          "filesz": "0x500",
+          "memsz": "0x500",
+          "bss_size": "0x0",
+          "align": "0x4000",
+          "flags": "RX"
+        },
+        {
+          "vaddr": "0x8f20",
+          "mapped_start": "0x70001d8f20",
+          "mapped_end": "0x70001da000",
+          "filesz": "0x230",
+          "memsz": "0x10e0",
+          "bss_size": "0xeb0",
+          "align": "0x4000",
+          "flags": "RW"
+        },
+        {
+          "vaddr": "0xd150",
+          "mapped_start": "0x70001dd150",
+          "mapped_end": "0x70001dd190",
+          "filesz": "0x30",
+          "memsz": "0x40",
+          "bss_size": "0x10",
+          "align": "0x4000",
+          "flags": "RW"
+        }
+      ],
+      "has_gnu_relro": true,
+      "init_array_count": 0,
+      "needed_libraries": [
+        "liblog.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ],
+      "relocations_count": 21,
+      "relocations_by_type": {
+        "R_AARCH64_RELATIVE": 9,
+        "R_AARCH64_JUMP_SLOT": 12
+      },
+      "exported_symbols_count": 1,
+      "imported_symbols_count": 12
+    },
+    {
+      "module": "libunity.so",
+      "path": "extracted_durak\\libunity.so",
+      "base_address": "0x70001e0000",
+      "load_bias": "0x70001e0000",
+      "min_vaddr": "0x0",
+      "load_size": "0x15cc000",
+      "max_align": "0x4000",
+      "segments_count": 4,
+      "pt_load_segments": [
+        {
+          "vaddr": "0x0",
+          "mapped_start": "0x70001e0000",
+          "mapped_end": "0x7000694d98",
+          "filesz": "0x4b4d98",
+          "memsz": "0x4b4d98",
+          "bss_size": "0x0",
+          "align": "0x4000",
+          "flags": "R"
+        },
+        {
+          "vaddr": "0x4b8da0",
+          "mapped_start": "0x7000698da0",
+          "mapped_end": "0x70015e2700",
+          "filesz": "0xf49960",
+          "memsz": "0xf49960",
+          "bss_size": "0x0",
+          "align": "0x4000",
+          "flags": "RX"
+        },
+        {
+          "vaddr": "0x1406700",
+          "mapped_start": "0x70015e6700",
+          "mapped_end": "0x7001635000",
+          "filesz": "0x4e0e8",
+          "memsz": "0x4e900",
+          "bss_size": "0x818",
+          "align": "0x4000",
+          "flags": "RW"
+        },
+        {
+          "vaddr": "0x14587f0",
+          "mapped_start": "0x70016387f0",
+          "mapped_end": "0x70017a8160",
+          "filesz": "0x18b38",
+          "memsz": "0x16f970",
+          "bss_size": "0x156e38",
+          "align": "0x4000",
+          "flags": "RW"
+        }
+      ],
+      "has_gnu_relro": true,
+      "init_array_count": 506,
+      "needed_libraries": [
+        "libmain.so",
+        "libandroid.so",
+        "liblog.so",
+        "libz.so",
+        "libEGL.so",
+        "libmediandk.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ],
+      "relocations_count": 34139,
+      "relocations_by_type": {
+        "R_AARCH64_RELATIVE": 33781,
+        "R_AARCH64_ABS64": 6,
+        "R_AARCH64_GLOB_DAT": 12,
+        "R_AARCH64_JUMP_SLOT": 340
+      },
+      "exported_symbols_count": 7,
+      "imported_symbols_count": 342
+    },
+    {
+      "module": "libil2cpp.so",
+      "path": "extracted_durak\\libil2cpp.so",
+      "base_address": "0x70017ac000",
+      "load_bias": "0x70017ac000",
+      "min_vaddr": "0x0",
+      "load_size": "0x2000000",
+      "max_align": "0x4000",
+      "segments_count": 4,
+      "pt_load_segments": [
+        {
+          "vaddr": "0x0",
+          "mapped_start": "0x70017ac000",
+          "mapped_end": "0x70022c4d24",
+          "filesz": "0xb18d24",
+          "memsz": "0xb18d24",
+          "bss_size": "0x0",
+          "align": "0x4000",
+          "flags": "R"
+        },
+        {
+          "vaddr": "0xb1cd30",
+          "mapped_start": "0x70022c8d30",
+          "mapped_end": "0x70032a4330",
+          "filesz": "0xfdb600",
+          "memsz": "0xfdb600",
+          "bss_size": "0x0",
+          "align": "0x4000",
+          "flags": "RX"
+        },
+        {
+          "vaddr": "0x1afc330",
+          "mapped_start": "0x70032a8330",
+          "mapped_end": "0x70033d8000",
+          "filesz": "0x12f408",
+          "memsz": "0x12fcd0",
+          "bss_size": "0x8c8",
+          "align": "0x4000",
+          "flags": "RW"
+        },
+        {
+          "vaddr": "0x1c2f738",
+          "mapped_start": "0x70033db738",
+          "mapped_end": "0x70037a8240",
+          "filesz": "0x1aaf40",
+          "memsz": "0x3ccb08",
+          "bss_size": "0x221bc8",
+          "align": "0x4000",
+          "flags": "RW"
+        }
+      ],
+      "has_gnu_relro": true,
+      "init_array_count": 22,
+      "needed_libraries": [
+        "liblog.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ],
+      "relocations_count": 233350,
+      "relocations_by_type": {
+        "R_AARCH64_RELATIVE": 230788,
+        "R_AARCH64_GLOB_DAT": 165,
+        "R_AARCH64_ABS64": 1813,
+        "R_AARCH64_JUMP_SLOT": 584
+      },
+      "exported_symbols_count": 2416,
+      "imported_symbols_count": 277
+    }
+  ],
+  "cross_module_resolutions": [],
+  "external_resolutions": [
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "realloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3618",
+      "target_addr": "0x70001c3618",
+      "resolved_val": "0x7fff036000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "calloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c36a8",
+      "target_addr": "0x70001c36a8",
+      "resolved_val": "0x7fff00f000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "strncmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c36d8",
+      "target_addr": "0x70001c36d8",
+      "resolved_val": "0x7fff042000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "memcmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c38f8",
+      "target_addr": "0x70001c38f8",
+      "resolved_val": "0x7fff030000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "log",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3958",
+      "target_addr": "0x70001c3958",
+      "resolved_val": "0x7fff028000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "__android_log_print",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3a10",
+      "target_addr": "0x70001c3a10",
+      "resolved_val": "0x7fff000000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "strcmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3a88",
+      "target_addr": "0x70001c3a88",
+      "resolved_val": "0x7fff03f000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "__android_log_write",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3a90",
+      "target_addr": "0x70001c3a90",
+      "resolved_val": "0x7fff002000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "memmove",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3b78",
+      "target_addr": "0x70001c3b78",
+      "resolved_val": "0x7fff032000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "strlen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3bf8",
+      "target_addr": "0x70001c3bf8",
+      "resolved_val": "0x7fff041000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "malloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c78",
+      "target_addr": "0x70001c3c78",
+      "resolved_val": "0x7fff02e000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "memcpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c80",
+      "target_addr": "0x70001c3c80",
+      "resolved_val": "0x7fff031000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "memset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c98",
+      "target_addr": "0x70001c3c98",
+      "resolved_val": "0x7fff033000"
+    },
+    {
+      "consumer": "libsqlite3.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3d00",
+      "target_addr": "0x70001c3d00",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libmain.so",
+      "symbol": "malloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9108",
+      "target_addr": "0x70001d9108",
+      "resolved_val": "0x7fff02e000"
+    },
+    {
+      "consumer": "libmain.so",
+      "symbol": "memcpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9110",
+      "target_addr": "0x70001d9110",
+      "resolved_val": "0x7fff031000"
+    },
+    {
+      "consumer": "libmain.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9118",
+      "target_addr": "0x70001d9118",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "memset",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x14221d0",
+      "target_addr": "0x70016021d0",
+      "resolved_val": "0x7fff033000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451310",
+      "target_addr": "0x7001631310",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x145d040",
+      "target_addr": "0x700163d040",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "malloc",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451318",
+      "target_addr": "0x7001631318",
+      "resolved_val": "0x7fff02e000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "malloc",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x145d038",
+      "target_addr": "0x700163d038",
+      "resolved_val": "0x7fff02e000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "realloc",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451320",
+      "target_addr": "0x7001631320",
+      "resolved_val": "0x7fff036000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "realloc",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x145d048",
+      "target_addr": "0x700163d048",
+      "resolved_val": "0x7fff036000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "calloc",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451e20",
+      "target_addr": "0x7001631e20",
+      "resolved_val": "0x7fff00f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "calloc",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x145d058",
+      "target_addr": "0x700163d058",
+      "resolved_val": "0x7fff00f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strlen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d68",
+      "target_addr": "0x7001633d68",
+      "resolved_val": "0x7fff041000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "memcpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d78",
+      "target_addr": "0x7001633d78",
+      "resolved_val": "0x7fff031000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "memmove",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d80",
+      "target_addr": "0x7001633d80",
+      "resolved_val": "0x7fff032000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "memset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d88",
+      "target_addr": "0x7001633d88",
+      "resolved_val": "0x7fff033000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strcpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d90",
+      "target_addr": "0x7001633d90",
+      "resolved_val": "0x7fff040000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453eb8",
+      "target_addr": "0x7001633eb8",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "malloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ed8",
+      "target_addr": "0x7001633ed8",
+      "resolved_val": "0x7fff02e000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "realloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ee0",
+      "target_addr": "0x7001633ee0",
+      "resolved_val": "0x7fff036000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "memcmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f60",
+      "target_addr": "0x7001633f60",
+      "resolved_val": "0x7fff030000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "atanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fa8",
+      "target_addr": "0x7001633fa8",
+      "resolved_val": "0x7fff00b000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strcmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fb0",
+      "target_addr": "0x7001633fb0",
+      "resolved_val": "0x7fff03f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "acosf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fc0",
+      "target_addr": "0x7001633fc0",
+      "resolved_val": "0x7fff004000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "cosf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fc8",
+      "target_addr": "0x7001633fc8",
+      "resolved_val": "0x7fff016000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "powf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fd0",
+      "target_addr": "0x7001633fd0",
+      "resolved_val": "0x7fff035000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "fmodf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fe0",
+      "target_addr": "0x7001633fe0",
+      "resolved_val": "0x7fff01e000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "fmod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fe8",
+      "target_addr": "0x7001633fe8",
+      "resolved_val": "0x7fff01d000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "log2f",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ff0",
+      "target_addr": "0x7001633ff0",
+      "resolved_val": "0x7fff02c000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "sinf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454008",
+      "target_addr": "0x7001634008",
+      "resolved_val": "0x7fff03c000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "logf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454010",
+      "target_addr": "0x7001634010",
+      "resolved_val": "0x7fff02d000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "asinf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454088",
+      "target_addr": "0x7001634088",
+      "resolved_val": "0x7fff007000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "atan2f",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454090",
+      "target_addr": "0x7001634090",
+      "resolved_val": "0x7fff00a000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "remainderf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540a0",
+      "target_addr": "0x70016340a0",
+      "resolved_val": "0x7fff038000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "tanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540d8",
+      "target_addr": "0x70016340d8",
+      "resolved_val": "0x7fff04c000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "pow",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540e0",
+      "target_addr": "0x70016340e0",
+      "resolved_val": "0x7fff034000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strncpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454108",
+      "target_addr": "0x7001634108",
+      "resolved_val": "0x7fff043000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strnlen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454110",
+      "target_addr": "0x7001634110",
+      "resolved_val": "0x7fff044000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "calloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454118",
+      "target_addr": "0x7001634118",
+      "resolved_val": "0x7fff00f000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "cos",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454138",
+      "target_addr": "0x7001634138",
+      "resolved_val": "0x7fff015000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "log10f",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454148",
+      "target_addr": "0x7001634148",
+      "resolved_val": "0x7fff02a000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "sin",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454158",
+      "target_addr": "0x7001634158",
+      "resolved_val": "0x7fff03b000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strncmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454168",
+      "target_addr": "0x7001634168",
+      "resolved_val": "0x7fff042000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strtoul",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454178",
+      "target_addr": "0x7001634178",
+      "resolved_val": "0x7fff049000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strtod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454180",
+      "target_addr": "0x7001634180",
+      "resolved_val": "0x7fff045000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strtol",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454188",
+      "target_addr": "0x7001634188",
+      "resolved_val": "0x7fff047000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "log",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454198",
+      "target_addr": "0x7001634198",
+      "resolved_val": "0x7fff028000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "expf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541c0",
+      "target_addr": "0x70016341c0",
+      "resolved_val": "0x7fff018000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "hypotf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541e0",
+      "target_addr": "0x70016341e0",
+      "resolved_val": "0x7fff025000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "ftello64",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541f0",
+      "target_addr": "0x70016341f0",
+      "resolved_val": "0x7fff023000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "fseeko64",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541f8",
+      "target_addr": "0x70016341f8",
+      "resolved_val": "0x7fff022000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "atoi",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542d0",
+      "target_addr": "0x70016342d0",
+      "resolved_val": "0x7fff00c000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "acos",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454320",
+      "target_addr": "0x7001634320",
+      "resolved_val": "0x7fff003000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "ldexp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454330",
+      "target_addr": "0x7001634330",
+      "resolved_val": "0x7fff026000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "exp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454338",
+      "target_addr": "0x7001634338",
+      "resolved_val": "0x7fff017000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "cbrtf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454340",
+      "target_addr": "0x7001634340",
+      "resolved_val": "0x7fff010000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "atan2",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543e0",
+      "target_addr": "0x70016343e0",
+      "resolved_val": "0x7fff009000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "tan",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543e8",
+      "target_addr": "0x70016343e8",
+      "resolved_val": "0x7fff04b000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "__android_log_print",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454420",
+      "target_addr": "0x7001634420",
+      "resolved_val": "0x7fff000000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "__android_log_write",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544a8",
+      "target_addr": "0x70016344a8",
+      "resolved_val": "0x7fff002000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "__android_log_vprint",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454640",
+      "target_addr": "0x7001634640",
+      "resolved_val": "0x7fff001000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strtoull",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454678",
+      "target_addr": "0x7001634678",
+      "resolved_val": "0x7fff04a000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "sqrtf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546c0",
+      "target_addr": "0x70016346c0",
+      "resolved_val": "0x7fff03e000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "ldexpf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546c8",
+      "target_addr": "0x70016346c8",
+      "resolved_val": "0x7fff027000"
+    },
+    {
+      "consumer": "libunity.so",
+      "symbol": "strtof",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454710",
+      "target_addr": "0x7001634710",
+      "resolved_val": "0x7fff046000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1c29f10",
+      "target_addr": "0x70033d5f10",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1dda128",
+      "target_addr": "0x7003586128",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "malloc",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1dda118",
+      "target_addr": "0x7003586118",
+      "resolved_val": "0x7fff02e000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "calloc",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1dda138",
+      "target_addr": "0x7003586138",
+      "resolved_val": "0x7fff00f000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "realloc",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1dda140",
+      "target_addr": "0x7003586140",
+      "resolved_val": "0x7fff036000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "memcpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a538",
+      "target_addr": "0x70033d6538",
+      "resolved_val": "0x7fff031000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "memmove",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a540",
+      "target_addr": "0x70033d6540",
+      "resolved_val": "0x7fff032000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "fmodf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a550",
+      "target_addr": "0x70033d6550",
+      "resolved_val": "0x7fff01e000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "atan2f",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a560",
+      "target_addr": "0x70033d6560",
+      "resolved_val": "0x7fff00a000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "memset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a568",
+      "target_addr": "0x70033d6568",
+      "resolved_val": "0x7fff033000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "log10f",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a570",
+      "target_addr": "0x70033d6570",
+      "resolved_val": "0x7fff02a000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "powf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a578",
+      "target_addr": "0x70033d6578",
+      "resolved_val": "0x7fff035000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "cosf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a580",
+      "target_addr": "0x70033d6580",
+      "resolved_val": "0x7fff016000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "acosf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a588",
+      "target_addr": "0x70033d6588",
+      "resolved_val": "0x7fff004000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "atanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a598",
+      "target_addr": "0x70033d6598",
+      "resolved_val": "0x7fff00b000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "log",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a630",
+      "target_addr": "0x70033d6630",
+      "resolved_val": "0x7fff028000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "acos",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a638",
+      "target_addr": "0x70033d6638",
+      "resolved_val": "0x7fff003000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "atan",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a640",
+      "target_addr": "0x70033d6640",
+      "resolved_val": "0x7fff008000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "atan2",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a648",
+      "target_addr": "0x70033d6648",
+      "resolved_val": "0x7fff009000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "cos",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a650",
+      "target_addr": "0x70033d6650",
+      "resolved_val": "0x7fff015000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "log10",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a658",
+      "target_addr": "0x70033d6658",
+      "resolved_val": "0x7fff029000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "sin",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a660",
+      "target_addr": "0x70033d6660",
+      "resolved_val": "0x7fff03b000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "tan",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a668",
+      "target_addr": "0x70033d6668",
+      "resolved_val": "0x7fff04b000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "sinf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a670",
+      "target_addr": "0x70033d6670",
+      "resolved_val": "0x7fff03c000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "fmod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a680",
+      "target_addr": "0x70033d6680",
+      "resolved_val": "0x7fff01d000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "tanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a6b8",
+      "target_addr": "0x70033d66b8",
+      "resolved_val": "0x7fff04c000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "free",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a768",
+      "target_addr": "0x70033d6768",
+      "resolved_val": "0x7fff01f000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "malloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a778",
+      "target_addr": "0x70033d6778",
+      "resolved_val": "0x7fff02e000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strcmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a790",
+      "target_addr": "0x70033d6790",
+      "resolved_val": "0x7fff03f000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "memcmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a7a8",
+      "target_addr": "0x70033d67a8",
+      "resolved_val": "0x7fff030000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strlen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a7b8",
+      "target_addr": "0x70033d67b8",
+      "resolved_val": "0x7fff041000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strncpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a7c0",
+      "target_addr": "0x70033d67c0",
+      "resolved_val": "0x7fff043000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strcpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a880",
+      "target_addr": "0x70033d6880",
+      "resolved_val": "0x7fff040000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strncmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8b8",
+      "target_addr": "0x70033d68b8",
+      "resolved_val": "0x7fff042000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "calloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8c8",
+      "target_addr": "0x70033d68c8",
+      "resolved_val": "0x7fff00f000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "hypot",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8e8",
+      "target_addr": "0x70033d68e8",
+      "resolved_val": "0x7fff024000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "pow",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8f0",
+      "target_addr": "0x70033d68f0",
+      "resolved_val": "0x7fff034000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "__android_log_print",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa40",
+      "target_addr": "0x70033d6a40",
+      "resolved_val": "0x7fff000000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "realloc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aaf8",
+      "target_addr": "0x70033d6af8",
+      "resolved_val": "0x7fff036000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "atoi",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac48",
+      "target_addr": "0x70033d6c48",
+      "resolved_val": "0x7fff00c000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "memalign",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac88",
+      "target_addr": "0x70033d6c88",
+      "resolved_val": "0x7fff02f000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strtol",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad38",
+      "target_addr": "0x70033d6d38",
+      "resolved_val": "0x7fff047000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "atol",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad58",
+      "target_addr": "0x70033d6d58",
+      "resolved_val": "0x7fff00d000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strtoul",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad88",
+      "target_addr": "0x70033d6d88",
+      "resolved_val": "0x7fff049000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strtoll",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af40",
+      "target_addr": "0x70033d6f40",
+      "resolved_val": "0x7fff048000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strtoull",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af48",
+      "target_addr": "0x70033d6f48",
+      "resolved_val": "0x7fff04a000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strtof",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af50",
+      "target_addr": "0x70033d6f50",
+      "resolved_val": "0x7fff046000"
+    },
+    {
+      "consumer": "libil2cpp.so",
+      "symbol": "strtod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af58",
+      "target_addr": "0x70033d6f58",
+      "resolved_val": "0x7fff045000"
+    }
+  ],
+  "unresolved_strong_details": [
+    {
+      "module": "libsqlite3.so",
+      "symbol": "__sF",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1c3eb8",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "close",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4748",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "access",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4760",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "getcwd",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4778",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "stat",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4790",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fstat",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c47a8",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "ftruncate",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c47c0",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fcntl",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c47d8",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "read",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c47f0",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "write",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4838",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fchmod",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4880",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "unlink",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c48b0",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "mkdir",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c48e0",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "rmdir",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c48f8",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fchown",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4910",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "geteuid",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4928",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "mmap",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4940",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "munmap",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4958",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "mremap",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c4970",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "readlink",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c49a0",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "lstat",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c49b8",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "ioctl",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x1c49d0",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "strcspn",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c35c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "lseek64",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c35e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutex_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c35f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fchmod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3628",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "open",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3630",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_key_create",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3638",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutex_trylock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3660",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_once",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3670",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "__cxa_finalize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3678",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "mkdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c36a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "syslog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c36c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "getcwd",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c36c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "posix_memalign",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3708",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "read",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3718",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fstat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3728",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutex_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3748",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "abort",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3768",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "mremap",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3778",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "vsnprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3780",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fchown",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3788",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "lstat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c37a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "qsort",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c37b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "__errno",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c37c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "snprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c37f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "getpid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c37f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "dl_iterate_phdr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3818",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "geteuid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3828",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "strcat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3830",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutexattr_settype",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3838",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "android_set_abort_message",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3848",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "asprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3850",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "islower",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3870",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "write",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3878",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "getenv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c38a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "strrchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c38b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "access",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c38c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "time",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c38c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fputc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3950",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "__stack_chk_fail",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3960",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "rmdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3970",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "gettimeofday",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3980",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "dlclose",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3988",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutexattr_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c39a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_cond_wait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c39a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "ioctl",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c39d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_setspecific",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c39e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "dlsym",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c39f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "openlog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3a00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "dlerror",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3a18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "unlink",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3a20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "sysconf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3a40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutexattr_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3ac0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "strerror_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3ae0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutex_lock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3b20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "mmap",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3b28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "closelog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3b30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "utimes",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3b38",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_getspecific",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3b40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "isxdigit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3ba8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "readlink",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3bc8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "usleep",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3be8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "close",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "vasprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "dlopen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c10",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "stat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fsync",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "localtime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "munmap",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3c60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_cond_broadcast",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3cc8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "ftruncate",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3cd8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "fcntl",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3cf0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "vfprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3d50",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_mutex_unlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3d58",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libsqlite3.so",
+      "symbol": "__cxa_atexit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c3d68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "__cxa_finalize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x90f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "__cxa_atexit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x90f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "__register_atfork",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9100",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "dlsym",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9120",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "dlclose",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9128",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "snprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9130",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "dlopen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9138",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "dlerror",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9140",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libmain.so",
+      "symbol": "__stack_chk_fail",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x9148",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "stderr",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451328",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strdup",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451498",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strdup",
+      "r_type": "R_AARCH64_ABS64",
+      "r_offset": "0x145d050",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fread",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x14514a0",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fwrite",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451d78",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "longjmp",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1451e18",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__sF",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1452328",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "stdout",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1453410",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__cxa_finalize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d50",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__cxa_atexit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d58",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__register_atfork",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__stack_chk_fail",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "clock_gettime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453d98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "open",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453da0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "read",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453da8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "close",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453db0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strstr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453db8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__gnu_strerror_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453dc0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sched_yield",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453dc8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "socket",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453dd0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fcntl",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453dd8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__errno",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453de0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "setsockopt",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453de8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "bind",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453df0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getsockopt",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453df8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "connect",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "poll",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getsockname",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e10",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "listen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "accept",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "send",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "recv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "syscall",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e38",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sem_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sem_wait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e48",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sem_post",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e50",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sem_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e58",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_key_create",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_key_delete",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_attr_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getpagesize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e78",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_attr_setstacksize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e80",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_create",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e88",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_attr_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e90",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_self",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453e98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_join",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ea0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "dlopen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ea8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "dlerror",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453eb0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "dlsym",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ec0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "dlclose",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ec8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fstat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ed0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "posix_memalign",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ee8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mmap",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ef0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "munmap",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ef8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "madvise",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mprotect",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_detach",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f10",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "vsnprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "snprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getaddrinfo",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "freeaddrinfo",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "prctl",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f38",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "vfprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fflush",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f48",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strspn",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f50",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "memchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f58",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strdup",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "time",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "write",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f78",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "lseek",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f80",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fopen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f88",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fread",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f90",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fclose",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453f98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "remove",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fa0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "modff",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fb8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453fd8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "exp2f",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1453ff8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sincosf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454000",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454018",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getenv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454020",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "localtime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454028",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "gmtime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454030",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mktime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454038",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "difftime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454040",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "wmemchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454048",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sscanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454050",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglDestroySurface",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454058",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglGetError",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454060",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglDestroyContext",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454068",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglCreateContext",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454070",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglCreatePbufferSurface",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454078",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglMakeCurrent",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454080",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "qsort",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454098",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "vprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "gettimeofday",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "printf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fwrite",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fputc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "longjmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "setjmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fseek",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14540f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ftell",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454100",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "exit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454120",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_setspecific",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454128",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_getspecific",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454130",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "exp2",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454140",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "raise",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454150",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strrchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454160",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strcat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454170",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "modf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454190",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__system_property_find",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "localtime_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "setlocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strncat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "tanhf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "feof",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ferror",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strerror",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14541e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strcasecmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454200",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutex_lock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454208",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutex_unlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454210",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fputs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454218",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "inet_pton",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454220",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "unlink",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454228",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fgets",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454230",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "inet_ntop",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454238",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getpeername",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454240",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutex_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454248",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutex_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454250",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "memrchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454258",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strcspn",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454260",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strtok_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454268",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fdopen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454270",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fileno",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454278",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strftime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454280",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ioctl",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454288",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "basename",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454290",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "stat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454298",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__FD_SET_chk",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fnmatch",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "gmtime_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "rename",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pipe",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strerror_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "if_nametoindex",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "geteuid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getpwuid_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "closedir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "opendir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14542f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "readdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454300",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "puts",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454308",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getauxval",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454310",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "setbuf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454318",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sincos",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454328",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getpid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454348",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglGetProcAddress",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454358",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglSurfaceAttrib",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454360",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglGetCurrentContext",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454368",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "clearerr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454370",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglChooseConfig",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454378",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglGetDisplay",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454380",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglInitialize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454388",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglGetConfigAttrib",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454390",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglCreateWindowSurface",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454398",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ANativeWindow_getWidth",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ANativeWindow_getHeight",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglQuerySurface",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglTerminate",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglSwapInterval",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglQueryString",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglGetCurrentSurface",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ANativeWindow_setBuffersGeometry",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "eglSwapBuffers",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "inflateInit2_",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14543f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "inflateEnd",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454400",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "inflate",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454408",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sigemptyset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454410",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sigaction",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454418",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "lseek64",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454428",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutexattr_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454430",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutexattr_settype",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454438",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutexattr_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454440",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_condattr_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454448",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_condattr_setclock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454450",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_cond_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454458",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_condattr_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454460",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_cond_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454468",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ANativeWindow_release",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454470",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_cond_wait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454478",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ANativeWindow_acquire",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454480",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_cond_broadcast",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454488",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_cond_signal",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454490",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_cond_timedwait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454498",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sigaltstack",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__system_property_get",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ANativeWindow_fromSurface",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "dladdr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "AChoreographer_getInstance",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "AChoreographer_postFrameCallback",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_removeFd",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_prepare",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_pollOnce",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_acquire",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_release",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454500",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_wake",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454508",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_addFd",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454510",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ALooper_forThread",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454518",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorManager_getInstance",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454520",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorManager_createEventQueue",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454528",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorManager_getSensorList",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454530",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorEventQueue_hasEvents",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454538",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorEventQueue_getEvents",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454540",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorManager_getDefaultSensor",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454548",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorEventQueue_enableSensor",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454550",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorManager_destroyEventQueue",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454558",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorEventQueue_disableSensor",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454560",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensor_getType",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454568",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensor_getResolution",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454570",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensor_getMinDelay",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454578",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensor_getName",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454580",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensor_getVendor",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454588",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ASensorEventQueue_setEventRate",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454590",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "gettid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454598",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "select",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "usleep",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_mutex_trylock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fgetc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getuid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getpwuid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "lstat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "truncate",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "chmod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mkdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "symlink",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "rmdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14545f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "realpath",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454600",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "access",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454608",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "flock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454610",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "statfs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454618",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "utime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454620",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "inet_addr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454628",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "shutdown",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454630",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "clock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454638",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "nanosleep",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454648",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fscanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454650",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_once",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454658",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "getpriority",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454660",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_exit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454668",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__system_property_read",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454670",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_rwlock_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454680",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_rwlock_rdlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454688",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_rwlock_unlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454690",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_rwlock_wrlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454698",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "process_vm_readv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ptrace",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "dup",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "sysconf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_attr_setdetachstate",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "setpriority",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "gethostbyname",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "isspace",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__FD_ISSET_chk",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "gethostbyaddr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14546f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "pthread_equal",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454700",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "wcslen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454708",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "vasprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454718",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "android_set_abort_message",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454720",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "openlog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454728",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "syslog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454730",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "closelog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454738",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "fseeko",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454740",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "ftello",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454748",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "newlocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454750",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "uselocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454758",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "vsscanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454760",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strftime_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454768",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mbsrtowcs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454770",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "freelocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454778",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "iswlower_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454780",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "wcsnrtombs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454788",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "wcrtomb",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454790",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mbsnrtowcs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454798",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mbrtowc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mbtowc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__ctype_get_mb_cur_max",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "mbrlen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strtoll_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strtoull_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "strtold_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "__assert2",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "dl_iterate_phdr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14547e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "stderr",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1c29f18",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__sF",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1c2a498",
+      "addend": 0,
+      "is_plt": false
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__cxa_finalize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a4f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__cxa_atexit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a500",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__register_atfork",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a508",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__stack_chk_fail",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a548",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "modf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a558",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sincosf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a590",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sincos",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a678",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "exp2f",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a6b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "abort",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a760",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "exit",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a770",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a780",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "snprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a788",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "bsearch",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a798",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "towlower",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a7a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a7b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strrchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a7c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "setlocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a7d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "memchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a868",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pipe",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fcntl",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "write",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "read",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a8f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "logb",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a900",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "scalbn",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a908",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__gnu_strerror_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a910",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "stat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a918",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__errno",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a920",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "lstat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a928",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "unlink",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a930",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "readdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a938",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "closedir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a940",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "opendir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a948",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strdup",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a950",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "qsort",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a958",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mkdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a960",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "chmod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a968",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "link",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a970",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "symlink",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a978",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "readlink",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a980",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "rename",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a988",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "rmdir",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a990",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fstat",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a998",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fchmod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sendfile",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "futimens",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "time",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "srand48",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "lrand48",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "open",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "close",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "utimes",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "geteuid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getegid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_key_delete",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2a9f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_getspecific",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_setspecific",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutex_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa10",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutex_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutex_lock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutex_unlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_key_create",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa38",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_once",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa48",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dl_iterate_phdr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa50",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strstr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa58",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutexattr_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutexattr_settype",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutexattr_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_rwlock_wrlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa78",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_rwlock_rdlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa80",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_rwlock_unlock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa88",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "access",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aa98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getenv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aaa0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "poll",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aaa8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_attr_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aab0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_create",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aab8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_attr_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aac0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_self",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aac8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_detach",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aad0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_setname_np",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aad8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sched_yield",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aae0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getcwd",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aae8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "inet_pton",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getaddrinfo",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "inet_ntop",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab10",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "freeaddrinfo",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getnameinfo",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "gethostname",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "socket",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "setsockopt",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab38",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "bind",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "connect",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab48",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getsockopt",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab50",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getsockname",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab58",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getpeername",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "listen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "shutdown",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "accept",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab78",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dup2",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab80",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "recvfrom",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab88",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "send",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab90",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sendmsg",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ab98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "recvmsg",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aba0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "ioctl",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aba8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "isatty",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abb0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "lseek",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abc8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "ftruncate",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abd0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dup",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abd8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mmap",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abe0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "munmap",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abe8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getpagesize",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abf0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_cond_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2abf8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_cond_destroy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_cond_wait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "gettimeofday",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac10",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_cond_timedwait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_cond_broadcast",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_cond_signal",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__FD_SET_chk",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "div",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac38",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "select",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sigemptyset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac50",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sigaction",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac58",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sysconf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "uname",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "setenv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "unsetenv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac78",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dladdr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac80",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getpid",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac90",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ac98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "clock_gettime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aca0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "clock_getres",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2aca8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mktime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2acb0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "localtime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2acb8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strftime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2acc0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "gmtime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2acc8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "difftime",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2acd0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "vsnprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2acd8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strlcpy",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2acf0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wmemchr",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "clock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "nanosleep",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "madvise",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fread",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad78",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "setjmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad80",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "signal",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad90",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_getattr_np",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ad98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_attr_getstack",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ada0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dlopen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ada8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sigdelset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2adb0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sigaddset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2adb8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_sigmask",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2adc0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sem_post",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2adc8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sigsuspend",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2add0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_kill",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2add8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sem_timedwait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ade0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sem_wait",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ade8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sem_init",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2adf0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sigfillset",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2adf8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_join",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae00",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sem_getvalue",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "usleep",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae10",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "vfprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae18",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fflush",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae20",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "syscall",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae28",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dlerror",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dlsym",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae38",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "dlclose",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae40",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "posix_memalign",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2ae48",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcslen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af08",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wmemcmp",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af30",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strtold",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af60",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcstoul",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af68",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcstoll",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af70",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcstoull",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af78",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcstof",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af80",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcstod",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af88",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcstold",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af90",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "swprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2af98",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcstol",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2afb0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strerror_r",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b098",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "pthread_mutex_trylock",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b0a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fopen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b1b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fseek",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b1c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fclose",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b1c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fwrite",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b1f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fseeko",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b1f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "ftello",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b200",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "newlocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b230",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "uselocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b238",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "vsscanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b240",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strftime_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b2b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mbsrtowcs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b2c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "sscanf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b2d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "vasprintf",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b300",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "freelocale",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b410",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strcoll_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b420",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strxfrm_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b428",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcscoll_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b438",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcsxfrm_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b440",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswlower_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b450",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswspace_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4a0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswprint_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4a8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswcntrl_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4b0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswupper_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswalpha_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4c0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswdigit_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4c8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswpunct_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswxdigit_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "iswblank_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "towupper_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "towlower_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "btowc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b4f8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wctob",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b500",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcsnrtombs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b518",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "wcrtomb",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b520",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mbsnrtowcs",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b528",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mbrtowc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b530",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mbtowc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b538",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__ctype_get_mb_cur_max",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b540",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "mbrlen",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b548",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "localeconv",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b5b8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strtoll_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b630",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strtoull_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b638",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "strtold_l",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b640",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "fputc",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b6d0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "android_set_abort_message",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b6d8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "openlog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b6e0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "syslog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b6e8",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "closelog",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b6f0",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__assert2",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b720",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "getauxval",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b728",
+      "addend": 0,
+      "is_plt": true
+    },
+    {
+      "module": "libil2cpp.so",
+      "symbol": "__system_property_get",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1c2b730",
+      "addend": 0,
+      "is_plt": true
+    }
+  ],
+  "unresolved_weak_details": [
+    {
+      "module": "libsqlite3.so",
+      "symbol": "pthread_create",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1c3db0",
+      "addend": 0
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "_ZTH15gDeferredAction",
+      "r_type": "R_AARCH64_GLOB_DAT",
+      "r_offset": "0x1452738",
+      "addend": 0
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "_ZTH15gDeferredAction",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x1454350",
+      "addend": 0
+    },
+    {
+      "module": "libunity.so",
+      "symbol": "AChoreographer_postFrameCallback64",
+      "r_type": "R_AARCH64_JUMP_SLOT",
+      "r_offset": "0x14544d0",
+      "addend": 0
+    }
+  ]
+}

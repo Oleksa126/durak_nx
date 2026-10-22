@@ -1,0 +1,2552 @@
+{
+  "total_symbols": 362,
+  "name_coverage_count": 359,
+  "name_coverage_percent": 99.17127071823204,
+  "summary_roles": {
+    "TRANSLATION_SHIM": 101,
+    "DIRECT_BINDING": 165,
+    "STUB_OR_DUMMY": 93,
+    "MISSING": 3
+  },
+  "summary_verification": {
+    "UNVERIFIED": 356,
+    "NOT_APPLICABLE": 3,
+    "VERIFIED": 3
+  },
+  "symbols": {
+    "AChoreographer_getInstance": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "AChoreographer_getInstance",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (AChoreographer_getInstance)"
+    },
+    "AChoreographer_postFrameCallback": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "AChoreographer_postFrameCallback",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (AChoreographer_postFrameCallback)"
+    },
+    "ALooper_acquire": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_acquire",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_acquire)"
+    },
+    "ALooper_addFd": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_addFd",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_addFd)"
+    },
+    "ALooper_forThread": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_forThread",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_forThread)"
+    },
+    "ALooper_pollOnce": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_pollOnce",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_pollOnce)"
+    },
+    "ALooper_prepare": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_prepare",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_prepare)"
+    },
+    "ALooper_release": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_release",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_release)"
+    },
+    "ALooper_removeFd": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_removeFd",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_removeFd)"
+    },
+    "ALooper_wake": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ALooper_wake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ALooper_wake)"
+    },
+    "ANativeWindow_acquire": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ANativeWindow_acquire",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ANativeWindow_acquire)"
+    },
+    "ANativeWindow_fromSurface": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ANativeWindow_fromSurface",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ANativeWindow_fromSurface)"
+    },
+    "ANativeWindow_getHeight": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ANativeWindow_getHeight",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ANativeWindow_getHeight)"
+    },
+    "ANativeWindow_getWidth": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ANativeWindow_getWidth",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ANativeWindow_getWidth)"
+    },
+    "ANativeWindow_release": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ANativeWindow_release",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ANativeWindow_release)"
+    },
+    "ANativeWindow_setBuffersGeometry": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ANativeWindow_setBuffersGeometry",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ANativeWindow_setBuffersGeometry)"
+    },
+    "ASensorEventQueue_disableSensor": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorEventQueue_disableSensor",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorEventQueue_disableSensor)"
+    },
+    "ASensorEventQueue_enableSensor": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorEventQueue_enableSensor",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorEventQueue_enableSensor)"
+    },
+    "ASensorEventQueue_getEvents": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorEventQueue_getEvents",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorEventQueue_getEvents)"
+    },
+    "ASensorEventQueue_hasEvents": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorEventQueue_hasEvents",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorEventQueue_hasEvents)"
+    },
+    "ASensorEventQueue_setEventRate": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorEventQueue_setEventRate",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorEventQueue_setEventRate)"
+    },
+    "ASensorManager_createEventQueue": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorManager_createEventQueue",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorManager_createEventQueue)"
+    },
+    "ASensorManager_destroyEventQueue": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorManager_destroyEventQueue",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorManager_destroyEventQueue)"
+    },
+    "ASensorManager_getDefaultSensor": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorManager_getDefaultSensor",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorManager_getDefaultSensor)"
+    },
+    "ASensorManager_getInstance": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorManager_getInstance",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorManager_getInstance)"
+    },
+    "ASensorManager_getSensorList": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensorManager_getSensorList",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensorManager_getSensorList)"
+    },
+    "ASensor_getMinDelay": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensor_getMinDelay",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensor_getMinDelay)"
+    },
+    "ASensor_getName": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensor_getName",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensor_getName)"
+    },
+    "ASensor_getResolution": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensor_getResolution",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensor_getResolution)"
+    },
+    "ASensor_getType": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensor_getType",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensor_getType)"
+    },
+    "ASensor_getVendor": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "ASensor_getVendor",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ASensor_getVendor)"
+    },
+    "__FD_ISSET_chk": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "__FD_ISSET_chk_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (__FD_ISSET_chk_fake); requires runtime/layout verification"
+    },
+    "__FD_SET_chk": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "__FD_SET_chk_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (__FD_SET_chk_fake); requires runtime/layout verification"
+    },
+    "__assert2": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "__assert2",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (__assert2)"
+    },
+    "__ctype_get_mb_cur_max": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "__ctype_get_mb_cur_max_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in __ctype_get_mb_cur_max_fake: `return 1;`"
+    },
+    "__cxa_atexit": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "__cxa_atexit_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in __cxa_atexit_fake: `(void)fn; (void)arg; (void)dso; return 0;`"
+    },
+    "__cxa_finalize": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "__cxa_finalize_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in __cxa_finalize_fake: `(void)dso;`"
+    },
+    "__errno": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "__errno",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (__errno)"
+    },
+    "__gnu_strerror_r": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "z_gnu_strerror_r",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_gnu_strerror_r); requires runtime/layout verification"
+    },
+    "__register_atfork": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "__register_atfork_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in __register_atfork_fake: `return 0;`"
+    },
+    "__sF": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fake_sF",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (fake_sF); requires runtime/layout verification"
+    },
+    "__stack_chk_fail": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "__stack_chk_fail_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (__stack_chk_fail_fake); requires runtime/layout verification"
+    },
+    "__system_property_find": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "__system_property_get": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "__system_property_get_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (__system_property_get_fake); requires runtime/layout verification"
+    },
+    "__system_property_read": {
+      "wave": "Wave 8 (Android NDK & Properties)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "abort": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "abort",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (abort)"
+    },
+    "accept": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "accept_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns -1"
+    },
+    "access": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "access_impl",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (access_impl); requires runtime/layout verification"
+    },
+    "android_set_abort_message": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "android_set_abort_message_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (android_set_abort_message_fake); requires runtime/layout verification"
+    },
+    "asprintf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": null,
+      "role": "MISSING",
+      "verification_status": "NOT_APPLICABLE",
+      "reason": "Not present in donor symbol table"
+    },
+    "basename": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_basename",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_basename); requires runtime/layout verification"
+    },
+    "bind": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "bind_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "bsearch": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "bsearch",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (bsearch)"
+    },
+    "btowc": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "btowc",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (btowc)"
+    },
+    "chmod": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "chmod_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in chmod_stub: `(void)path; (void)mode; return 0;`"
+    },
+    "clearerr": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "clearerr",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (clearerr)"
+    },
+    "clock": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "clock",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (clock)"
+    },
+    "clock_getres": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "clock_gettime": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "clock_gettime",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (clock_gettime)"
+    },
+    "close": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "close_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (close_fake); requires runtime/layout verification"
+    },
+    "closedir": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "closedir",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (closedir)"
+    },
+    "closelog": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "ret0_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (ret0_i)"
+    },
+    "connect": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "connect_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns ENETUNREACH"
+    },
+    "difftime": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "difftime",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (difftime)"
+    },
+    "div": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "div",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (div)"
+    },
+    "dl_iterate_phdr": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "so_dl_iterate_phdr",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (so_dl_iterate_phdr); requires runtime/layout verification"
+    },
+    "dladdr": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "dlclose": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "dlclose_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in dlclose_fake: `(void)h; return 0;`"
+    },
+    "dlerror": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "dlerror_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in dlerror_fake: `return NULL;`"
+    },
+    "dlopen": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "dlopen_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (dlopen_fake); requires runtime/layout verification"
+    },
+    "dlsym": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "dlsym_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (dlsym_fake); requires runtime/layout verification"
+    },
+    "dup": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_dup",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_dup); requires runtime/layout verification"
+    },
+    "dup2": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "dup2_stub",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (dup2_stub); requires runtime/layout verification"
+    },
+    "eglChooseConfig": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglChooseConfig",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglChooseConfig)"
+    },
+    "eglCreateContext": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglCreateContext",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglCreateContext)"
+    },
+    "eglCreatePbufferSurface": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglCreatePbufferSurface",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglCreatePbufferSurface)"
+    },
+    "eglCreateWindowSurface": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "egl_CreateWindowSurface_log",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (egl_CreateWindowSurface_log); requires runtime/layout verification"
+    },
+    "eglDestroyContext": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglDestroyContext",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglDestroyContext)"
+    },
+    "eglDestroySurface": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "egl_DestroySurface_keep",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `eglDestroySurface`: `egl_DestroySurface_keep`"
+    },
+    "eglGetConfigAttrib": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglGetConfigAttrib",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglGetConfigAttrib)"
+    },
+    "eglGetCurrentContext": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglGetCurrentContext",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglGetCurrentContext)"
+    },
+    "eglGetCurrentSurface": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglGetCurrentSurface",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglGetCurrentSurface)"
+    },
+    "eglGetDisplay": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglGetDisplay",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglGetDisplay)"
+    },
+    "eglGetError": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglGetError",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglGetError)"
+    },
+    "eglGetProcAddress": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglGetProcAddress",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglGetProcAddress)"
+    },
+    "eglInitialize": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglInitialize",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglInitialize)"
+    },
+    "eglMakeCurrent": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglMakeCurrent",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglMakeCurrent)"
+    },
+    "eglQueryString": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglQueryString",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglQueryString)"
+    },
+    "eglQuerySurface": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "egl_QuerySurface_log",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (egl_QuerySurface_log); requires runtime/layout verification"
+    },
+    "eglSurfaceAttrib": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglSurfaceAttrib",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglSurfaceAttrib)"
+    },
+    "eglSwapBuffers": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "egl_SwapBuffers_log",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `eglSwapBuffers`: `egl_SwapBuffers_log`"
+    },
+    "eglSwapInterval": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglSwapInterval",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglSwapInterval)"
+    },
+    "eglTerminate": {
+      "wave": "Wave 9 (EGL Graphics)",
+      "bound_func": "eglTerminate",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (eglTerminate)"
+    },
+    "exit": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "exit",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (exit)"
+    },
+    "exp2": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "exp2",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (exp2)"
+    },
+    "exp2f": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "exp2f",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (exp2f)"
+    },
+    "fchmod": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fchmod_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in fchmod_stub: `(void)fd; (void)m; return 0;`"
+    },
+    "fchown": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": null,
+      "role": "MISSING",
+      "verification_status": "NOT_APPLICABLE",
+      "reason": "Not present in donor symbol table"
+    },
+    "fclose": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fclose_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (fclose_fake); requires runtime/layout verification"
+    },
+    "fcntl": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fcntl_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Always returns 0 regardless of command (F_GETFL, F_SETFL, F_SETLK ignored)"
+    },
+    "fdopen": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fdopen",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (fdopen)"
+    },
+    "feof": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "feof_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `feof`: `feof_fake`"
+    },
+    "ferror": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "ferror_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `ferror`: `ferror_fake`"
+    },
+    "fflush": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fflush_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fflush`: `fflush_fake`"
+    },
+    "fgetc": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fgetc_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fgetc`: `fgetc_fake`"
+    },
+    "fgets": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fgets_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fgets`: `fgets_fake`"
+    },
+    "fileno": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fileno_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fileno`: `fileno_fake`"
+    },
+    "flock": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "fnmatch": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "fopen": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fopen_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (fopen_fake); requires runtime/layout verification"
+    },
+    "fprintf": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fprintf_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (fprintf_fake); requires runtime/layout verification"
+    },
+    "fputc": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fputc_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fputc`: `fputc_fake`"
+    },
+    "fputs": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fputs_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fputs`: `fputs_fake`"
+    },
+    "fread": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fread_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fread`: `fread_fake`"
+    },
+    "freeaddrinfo": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "freeaddrinfo_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "No-op"
+    },
+    "freelocale": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "freelocale_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "No-op void function"
+    },
+    "fscanf": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fscanf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (fscanf)"
+    },
+    "fseek": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fseek_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fseek`: `fseek_fake`"
+    },
+    "fseeko": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fseeko",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (fseeko)"
+    },
+    "fstat": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fstat_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "VERIFIED",
+      "reason": "Verified 128-byte AArch64 Bionic struct stat layout translation to newlib stat"
+    },
+    "fsync": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fsync_stub",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (fsync_stub); requires runtime/layout verification"
+    },
+    "ftell": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "ftell_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `ftell`: `ftell_fake`"
+    },
+    "ftello": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "ftello",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (ftello)"
+    },
+    "ftruncate": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "ftruncate_stub",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `ftruncate`: `ftruncate_stub`"
+    },
+    "futimens": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "fwrite": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fwrite_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `fwrite`: `fwrite_fake`"
+    },
+    "getaddrinfo": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "getaddrinfo_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns EAI_FAIL or mock localhost entry"
+    },
+    "getauxval": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "getauxval_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in getauxval_fake: `(void)type; return 0;`"
+    },
+    "getcwd": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "getcwd_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (getcwd_fake); requires runtime/layout verification"
+    },
+    "getegid": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "ret0_u",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "getenv": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "getenv_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `getenv`: `getenv_fake`"
+    },
+    "geteuid": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "ret0_u",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "gethostbyaddr": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "gethostbyname": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "gethostname": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "gethostname_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns \"localhost\""
+    },
+    "getnameinfo": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "getnameinfo_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns EAI_FAIL"
+    },
+    "getpagesize": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_getpagesize",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in z_getpagesize: `return 0x1000;`"
+    },
+    "getpeername": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "getpeername_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in getpeername_fake: `(void)s; (void)a; (void)l; return -1;`"
+    },
+    "getpid": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "getpid_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in getpid_fake: `return 1;`"
+    },
+    "getpriority": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "getpwuid": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "getpwuid_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns fixed mock passwd structure"
+    },
+    "getpwuid_r": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "getsockname": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "getsockname_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in getsockname_fake: `(void)s; (void)a; (void)l; return -1;`"
+    },
+    "getsockopt": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "getsockopt_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in getsockopt_fake: `(void)s; (void)lv; (void)n; (void)v; (void)l; return -1;`"
+    },
+    "gettid": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_gettid",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in z_gettid: `return 1;`"
+    },
+    "gettimeofday": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "gettimeofday",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (gettimeofday)"
+    },
+    "getuid": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "ret0_u",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 (root/single user)"
+    },
+    "gmtime": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "gmtime",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (gmtime)"
+    },
+    "gmtime_r": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "gmtime_r",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (gmtime_r)"
+    },
+    "if_nametoindex": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "if_nametoindex_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "inet_addr": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "inet_ntop": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "inet_pton": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "retm1_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in retm1_i: `return -1;`"
+    },
+    "inflate": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "inflate",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (inflate)"
+    },
+    "inflateEnd": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "inflateEnd",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (inflateEnd)"
+    },
+    "inflateInit2_": {
+      "wave": "Wave 7 (DL & Zlib)",
+      "bound_func": "inflateInit2_",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (inflateInit2_)"
+    },
+    "ioctl": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "ioctl_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in ioctl_stub: `(void)fd; (void)req; return -1;`"
+    },
+    "isatty": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "isatty",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (isatty)"
+    },
+    "islower": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "fbx_islower",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through macro calling host `islower`: `fbx_islower`"
+    },
+    "isspace": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "isspace",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (isspace)"
+    },
+    "iswalpha_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswalpha_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswalpha_l_fake); requires runtime/layout verification"
+    },
+    "iswblank_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswblank_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswblank_l_fake); requires runtime/layout verification"
+    },
+    "iswcntrl_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswcntrl_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswcntrl_l_fake); requires runtime/layout verification"
+    },
+    "iswdigit_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswdigit_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswdigit_l_fake); requires runtime/layout verification"
+    },
+    "iswlower_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswlower_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswlower_l_fake); requires runtime/layout verification"
+    },
+    "iswprint_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswprint_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswprint_l_fake); requires runtime/layout verification"
+    },
+    "iswpunct_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswpunct_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswpunct_l_fake); requires runtime/layout verification"
+    },
+    "iswspace_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswspace_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswspace_l_fake); requires runtime/layout verification"
+    },
+    "iswupper_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswupper_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswupper_l_fake); requires runtime/layout verification"
+    },
+    "iswxdigit_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "iswxdigit_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (iswxdigit_l_fake); requires runtime/layout verification"
+    },
+    "isxdigit": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "isxdigit",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (isxdigit)"
+    },
+    "link": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "link_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in link_stub: `(void)a; (void)b; return -1;`"
+    },
+    "listen": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "listen_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "localeconv": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "localeconv",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (localeconv)"
+    },
+    "localtime": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "localtime",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (localtime)"
+    },
+    "localtime_r": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "localtime_r",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (localtime_r)"
+    },
+    "logb": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "logb",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (logb)"
+    },
+    "longjmp": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "longjmp",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (longjmp)"
+    },
+    "lrand48": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "lseek": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_lseek",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `lseek`: `z_lseek`"
+    },
+    "lseek64": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_lseek",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_lseek); requires runtime/layout verification"
+    },
+    "lstat": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "lstat_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "VERIFIED",
+      "reason": "Verified 128-byte AArch64 Bionic struct stat layout translation to newlib stat"
+    },
+    "madvise": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Always returns 0 (MADV_DONTNEED ignored)"
+    },
+    "mbrlen": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "mbrlen",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (mbrlen)"
+    },
+    "mbrtowc": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "mbrtowc",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (mbrtowc)"
+    },
+    "mbsnrtowcs": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "mbsnrtowcs_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (mbsnrtowcs_fake); requires runtime/layout verification"
+    },
+    "mbsrtowcs": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "mbsrtowcs",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (mbsrtowcs)"
+    },
+    "mbtowc": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "mbtowc",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (mbtowc)"
+    },
+    "memchr": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "memchr",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (memchr)"
+    },
+    "memrchr": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "z_memrchr",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_memrchr); requires runtime/layout verification"
+    },
+    "mkdir": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "mkdir_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (mkdir_fake); requires runtime/layout verification"
+    },
+    "mktime": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "mktime",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (mktime)"
+    },
+    "mmap": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "mmap_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (mmap_fake); requires runtime/layout verification"
+    },
+    "modf": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "modf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (modf)"
+    },
+    "modff": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "modff",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (modff)"
+    },
+    "mprotect": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "mprotect_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (mprotect_fake); requires runtime/layout verification"
+    },
+    "mremap": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": null,
+      "role": "MISSING",
+      "verification_status": "NOT_APPLICABLE",
+      "reason": "Not present in donor symbol table"
+    },
+    "munmap": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "munmap_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (munmap_fake); requires runtime/layout verification"
+    },
+    "nanosleep": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "nanosleep",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (nanosleep)"
+    },
+    "newlocale": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "newlocale_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns dummy locale pointer (void*)1"
+    },
+    "open": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "open_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (open_fake); requires runtime/layout verification"
+    },
+    "opendir": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "opendir",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (opendir)"
+    },
+    "openlog": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "ret0_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (ret0_i)"
+    },
+    "pipe": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "pipe_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Implements in-memory ring buffer (fake pipe), non-POSIX"
+    },
+    "poll": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "poll_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Translates select to poll on socket fds only"
+    },
+    "posix_memalign": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "posix_memalign_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (posix_memalign_fake); requires runtime/layout verification"
+    },
+    "prctl": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_prctl",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 (PR_SET_NAME / thread naming ignored)"
+    },
+    "printf": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "debugPrintf",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (debugPrintf); requires runtime/layout verification"
+    },
+    "process_vm_readv": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_process_vm_readv",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in z_process_vm_readv: `(void)pid;(void)lv;(void)lc;(void)rv;(void)rc;(void)f; errno = ENOSYS; return -1`"
+    },
+    "pthread_attr_destroy": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_attr_destroy_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "No-op returning 0: `(void)a; return 0;`"
+    },
+    "pthread_attr_getstack": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_pthread_attr_getstack",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_pthread_attr_getstack); requires runtime/layout verification"
+    },
+    "pthread_attr_init": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_attr_init_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_attr_init_fake); requires runtime/layout verification"
+    },
+    "pthread_attr_setdetachstate": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_attr_setdetachstate_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_attr_setdetachstate_fake); requires runtime/layout verification"
+    },
+    "pthread_attr_setstacksize": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_attr_setstacksize_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_attr_setstacksize_fake); requires runtime/layout verification"
+    },
+    "pthread_cond_broadcast": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_cond_broadcast_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `pthread_cond_broadcast`: `pthread_cond_broadcast_fake`"
+    },
+    "pthread_cond_destroy": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_cond_destroy_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_cond_destroy_fake); requires runtime/layout verification"
+    },
+    "pthread_cond_init": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_cond_init_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_cond_init_fake); requires runtime/layout verification"
+    },
+    "pthread_cond_signal": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_cond_signal_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `pthread_cond_signal`: `pthread_cond_signal_fake`"
+    },
+    "pthread_cond_timedwait": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_cond_timedwait_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_cond_timedwait_fake); requires runtime/layout verification"
+    },
+    "pthread_cond_wait": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_cond_wait_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_cond_wait_fake); requires runtime/layout verification"
+    },
+    "pthread_condattr_destroy": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "pthread_condattr_init": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "pthread_condattr_setclock": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Explicit dummy stub in donor table (z_stub0)"
+    },
+    "pthread_create": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_create_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_create_fake); requires runtime/layout verification"
+    },
+    "pthread_detach": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_detach",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (pthread_detach)"
+    },
+    "pthread_equal": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_pthread_equal",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_pthread_equal); requires runtime/layout verification"
+    },
+    "pthread_exit": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_exit",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (pthread_exit)"
+    },
+    "pthread_getattr_np": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_pthread_getattr_np",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in z_pthread_getattr_np: `(void)thread; (void)attr; return 0;`"
+    },
+    "pthread_getspecific": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_getspecific_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_getspecific_fake); requires runtime/layout verification"
+    },
+    "pthread_join": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_join_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_join_fake); requires runtime/layout verification"
+    },
+    "pthread_key_create": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_key_create_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_key_create_fake); requires runtime/layout verification"
+    },
+    "pthread_key_delete": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_key_delete_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_key_delete_fake); requires runtime/layout verification"
+    },
+    "pthread_kill": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_kill_gc",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_kill_gc); requires runtime/layout verification"
+    },
+    "pthread_mutex_destroy": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_mutex_destroy_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_mutex_destroy_fake); requires runtime/layout verification"
+    },
+    "pthread_mutex_init": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_mutex_init_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_mutex_init_fake); requires runtime/layout verification"
+    },
+    "pthread_mutex_lock": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_mutex_lock_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_mutex_lock_fake); requires runtime/layout verification"
+    },
+    "pthread_mutex_trylock": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_mutex_trylock_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `pthread_mutex_trylock`: `pthread_mutex_trylock_fake`"
+    },
+    "pthread_mutex_unlock": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_mutex_unlock_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `pthread_mutex_unlock`: `pthread_mutex_unlock_fake`"
+    },
+    "pthread_mutexattr_destroy": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "ret0_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "No-op returning 0"
+    },
+    "pthread_mutexattr_init": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_mutexattr_init_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_mutexattr_init_fake); requires runtime/layout verification"
+    },
+    "pthread_mutexattr_settype": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_mutexattr_settype_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_mutexattr_settype_fake); requires runtime/layout verification"
+    },
+    "pthread_once": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_once_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_once_fake); requires runtime/layout verification"
+    },
+    "pthread_rwlock_init": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "No-op returning 0"
+    },
+    "pthread_rwlock_rdlock": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_rwlock_rdlock_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_rwlock_rdlock_fake); requires runtime/layout verification"
+    },
+    "pthread_rwlock_unlock": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_rwlock_unlock_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_rwlock_unlock_fake); requires runtime/layout verification"
+    },
+    "pthread_rwlock_wrlock": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_rwlock_wrlock_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_rwlock_wrlock_fake); requires runtime/layout verification"
+    },
+    "pthread_self": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_self",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (pthread_self)"
+    },
+    "pthread_setname_np": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_pthread_setname_np",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_pthread_setname_np); requires runtime/layout verification"
+    },
+    "pthread_setspecific": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_setspecific_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (pthread_setspecific_fake); requires runtime/layout verification"
+    },
+    "pthread_sigmask": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "pthread_sigmask_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Always returns 0 without modifying thread signal mask: `(void)how; (void)set; (void)old; return 0;`"
+    },
+    "ptrace": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 (anti-debugging stub)"
+    },
+    "puts": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "puts",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (puts)"
+    },
+    "qsort": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "qsort",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (qsort)"
+    },
+    "raise": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "raise",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (raise)"
+    },
+    "read": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "read_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (read_fake); requires runtime/layout verification"
+    },
+    "readdir": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "readdir_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (readdir_fake); requires runtime/layout verification"
+    },
+    "readlink": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "readlink_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Always sets errno=EINVAL and returns -1"
+    },
+    "realpath": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "realpath_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (realpath_fake); requires runtime/layout verification"
+    },
+    "recv": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "recv_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "recvfrom": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "recvfrom_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "recvmsg": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "remove": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "remove",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (remove)"
+    },
+    "rename": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "rename",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (rename)"
+    },
+    "rmdir": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "rmdir",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (rmdir)"
+    },
+    "scalbn": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "scalbn",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (scalbn)"
+    },
+    "sched_yield": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "sched_yield_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sched_yield_fake); requires runtime/layout verification"
+    },
+    "select": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "select_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Detected stub body in select_fake: `(void)n; (void)r; (void)w; (void)e; (void)t; return 0;`"
+    },
+    "sem_destroy": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "sem_destroy_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sem_destroy_fake); requires runtime/layout verification"
+    },
+    "sem_getvalue": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "sem_init": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "sem_init_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sem_init_fake); requires runtime/layout verification"
+    },
+    "sem_post": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "sem_post_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sem_post_fake); requires runtime/layout verification"
+    },
+    "sem_timedwait": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "sem_timedwait_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sem_timedwait_fake); requires runtime/layout verification"
+    },
+    "sem_wait": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "sem_wait_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sem_wait_fake); requires runtime/layout verification"
+    },
+    "send": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "send_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns -1"
+    },
+    "sendfile": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "sendfile_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Always returns -1"
+    },
+    "sendmsg": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "setbuf": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "setbuf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (setbuf)"
+    },
+    "setenv": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "setenv",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (setenv)"
+    },
+    "setjmp": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "setjmp",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (setjmp)"
+    },
+    "setlocale": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "setlocale",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (setlocale)"
+    },
+    "setpriority": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "setsockopt": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "setsockopt_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "shutdown": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "shutdown_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns 0"
+    },
+    "sigaction": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "sigaction_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without installing signal handler"
+    },
+    "sigaddset": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "ret0_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without adding signal"
+    },
+    "sigaltstack": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without configuring alternate stack"
+    },
+    "sigdelset": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without modifying signal set"
+    },
+    "sigemptyset": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "ret0_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without clearing set"
+    },
+    "sigfillset": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without modifying signal set"
+    },
+    "signal": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "signal_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without installing signal handler"
+    },
+    "sigsuspend": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0 without suspending signal"
+    },
+    "sincos": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "z_sincos",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_sincos); requires runtime/layout verification"
+    },
+    "sincosf": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "sincosf_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sincosf_fake); requires runtime/layout verification"
+    },
+    "snprintf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "snprintf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (snprintf)"
+    },
+    "socket": {
+      "wave": "Wave 10 (Sockets & Networking)",
+      "bound_func": "socket_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Offline stub / returns mock socket or ENETDOWN"
+    },
+    "sprintf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "sprintf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (sprintf)"
+    },
+    "srand48": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "sscanf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "sscanf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (sscanf)"
+    },
+    "stat": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "stat_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "VERIFIED",
+      "reason": "Verified 128-byte AArch64 Bionic struct stat layout translation to newlib stat (so_util.c)"
+    },
+    "statfs": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "statfs_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (statfs_fake); requires runtime/layout verification"
+    },
+    "stderr": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fake_sF[2]",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (fake_sF[2]); requires runtime/layout verification"
+    },
+    "stdout": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "fake_sF[1]",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (fake_sF[1]); requires runtime/layout verification"
+    },
+    "strcasecmp": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "z_strcasecmp",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `strcasecmp`: `z_strcasecmp`"
+    },
+    "strcat": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "strcat",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strcat)"
+    },
+    "strchr": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "z_strchr",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_strchr); requires runtime/layout verification"
+    },
+    "strcoll_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "strcoll_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (strcoll_l_fake); requires runtime/layout verification"
+    },
+    "strcspn": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "strcspn",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strcspn)"
+    },
+    "strdup": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "strdup",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strdup)"
+    },
+    "strerror": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "strerror",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strerror)"
+    },
+    "strerror_r": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "strerror_r_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (strerror_r_fake); requires runtime/layout verification"
+    },
+    "strftime": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "strftime",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strftime)"
+    },
+    "strftime_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "strftime_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (strftime_l_fake); requires runtime/layout verification"
+    },
+    "strlcpy": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "strlcpy",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strlcpy)"
+    },
+    "strncat": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "strncat",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strncat)"
+    },
+    "strrchr": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "z_strrchr",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (z_strrchr); requires runtime/layout verification"
+    },
+    "strspn": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "strspn",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strspn)"
+    },
+    "strstr": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "z_strstr",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `strstr`: `z_strstr`"
+    },
+    "strtok_r": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "strtok_r",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strtok_r)"
+    },
+    "strtold": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "strtold",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (strtold)"
+    },
+    "strtold_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "strtold_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (strtold_l_fake); requires runtime/layout verification"
+    },
+    "strtoll_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "strtoll_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (strtoll_l_fake); requires runtime/layout verification"
+    },
+    "strtoull_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "strtoull_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (strtoull_l_fake); requires runtime/layout verification"
+    },
+    "strxfrm_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "strxfrm_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (strxfrm_l_fake); requires runtime/layout verification"
+    },
+    "swprintf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "swprintf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (swprintf)"
+    },
+    "symlink": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "symlink_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Always returns -1"
+    },
+    "syscall": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "syscall_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (syscall_fake); requires runtime/layout verification"
+    },
+    "sysconf": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "sysconf_pass",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (sysconf_pass); requires runtime/layout verification"
+    },
+    "syslog": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "ret0_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "tanhf": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "tanhf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (tanhf)"
+    },
+    "time": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "time",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (time)"
+    },
+    "towlower": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "towlower",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (towlower)"
+    },
+    "towlower_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "towlower_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (towlower_l_fake); requires runtime/layout verification"
+    },
+    "towupper_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "towupper_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (towupper_l_fake); requires runtime/layout verification"
+    },
+    "truncate": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "truncate_stub",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Always returns 0 without truncating file"
+    },
+    "uname": {
+      "wave": "Wave 6 (Pthreads, TLS & Process)",
+      "bound_func": "uname_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Zeroes buffer and returns 0"
+    },
+    "unlink": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "unlink",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (unlink)"
+    },
+    "unsetenv": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "unsetenv",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (unsetenv)"
+    },
+    "uselocale": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "uselocale_fake",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns dummy locale pointer (void*)1"
+    },
+    "usleep": {
+      "wave": "Wave 3 (Time, Clock, Env & Stateful RNG)",
+      "bound_func": "usleep",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (usleep)"
+    },
+    "utime": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "ret0_i",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "utimes": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "z_stub0",
+      "role": "STUB_OR_DUMMY",
+      "verification_status": "UNVERIFIED",
+      "reason": "Returns 0"
+    },
+    "vasprintf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "vasprintf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (vasprintf)"
+    },
+    "vfprintf": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "vfprintf_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `vfprintf`: `vfprintf_fake`"
+    },
+    "vprintf": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "vprintf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (vprintf)"
+    },
+    "vsnprintf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "vsnprintf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (vsnprintf)"
+    },
+    "vsscanf": {
+      "wave": "Wave 2 (Format, Error, Guard & Lifecycle)",
+      "bound_func": "vsscanf",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (vsscanf)"
+    },
+    "wcrtomb": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcrtomb",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcrtomb)"
+    },
+    "wcscoll_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcscoll_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (wcscoll_l_fake); requires runtime/layout verification"
+    },
+    "wcslen": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "wcslen",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcslen)"
+    },
+    "wcsnrtombs": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcsnrtombs_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (wcsnrtombs_fake); requires runtime/layout verification"
+    },
+    "wcstod": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcstod",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcstod)"
+    },
+    "wcstof": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcstof",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcstof)"
+    },
+    "wcstol": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcstol",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcstol)"
+    },
+    "wcstold": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcstold",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcstold)"
+    },
+    "wcstoll": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcstoll",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcstoll)"
+    },
+    "wcstoul": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcstoul",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcstoul)"
+    },
+    "wcstoull": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcstoull",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wcstoull)"
+    },
+    "wcsxfrm_l": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wcsxfrm_l_fake",
+      "role": "TRANSLATION_SHIM",
+      "verification_status": "UNVERIFIED",
+      "reason": "Donor adapter shim (wcsxfrm_l_fake); requires runtime/layout verification"
+    },
+    "wctob": {
+      "wave": "Wave 4 (Locale & Multibyte Subsystem)",
+      "bound_func": "wctob",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wctob)"
+    },
+    "wmemchr": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "wmemchr",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wmemchr)"
+    },
+    "wmemcmp": {
+      "wave": "Wave 1 (Safe Leaf Libc & Math)",
+      "bound_func": "wmemcmp",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Direct unverified binding to toolchain libc/libm/libnx (wmemcmp)"
+    },
+    "write": {
+      "wave": "Wave 5 (FS, Stdio & Memory)",
+      "bound_func": "write_fake",
+      "role": "DIRECT_BINDING",
+      "verification_status": "UNVERIFIED",
+      "reason": "Pass-through wrapper calling host `write`: `write_fake`"
+    }
+  }
+}

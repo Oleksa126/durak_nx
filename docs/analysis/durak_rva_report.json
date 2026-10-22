@@ -1,0 +1,4342 @@
+{
+  "analyzer": "Durak NX Fail-Closed Analyzer",
+  "milestone": "M1 (Verified target and evidence)",
+  "target": "ru.appscraft.durak 25.0",
+  "status": "SUCCESS",
+  "integrity_verified": true,
+  "findings": {
+    "identities": {
+      "binaries": {
+        "libmain.so": {
+          "size": 6696,
+          "sha256": "c11373dffa1bab427e8864a40313111de2a70367d052d87f33a9069ce8949d93",
+          "build_id": "c5498ab8c791f1473a54c79a9d3c5b738ff6d941",
+          "elf_class": "ELFCLASS64",
+          "machine": "EM_AARCH64",
+          "verified": true
+        },
+        "libunity.so": {
+          "size": 21388304,
+          "sha256": "292f89210151ba0060f77d137cd6a00a52158dc5da760d4bf106158fc9309cef",
+          "build_id": "bcc661ea2046416d",
+          "elf_class": "ELFCLASS64",
+          "machine": "EM_AARCH64",
+          "verified": true
+        },
+        "libil2cpp.so": {
+          "size": 31256704,
+          "sha256": "7bc9c2e7e20c741a511e6645589db16d0fa084d79bcfc12ba1fab78931e2271c",
+          "build_id": "d3ddafd67eaec758b8cfc68a49f6f13a0167b1b0",
+          "elf_class": "ELFCLASS64",
+          "machine": "EM_AARCH64",
+          "verified": true
+        },
+        "libsqlite3.so": {
+          "size": 1797248,
+          "sha256": "6df7a75d31c417cae7e877fd7c3d190e0ac47b1f104ae0ae5501d72491b1c32c",
+          "build_id": "99495662cefa74605573c8dc36a53cb1f842764d",
+          "elf_class": "ELFCLASS64",
+          "machine": "EM_AARCH64",
+          "verified": true
+        }
+      },
+      "metadata": {
+        "size": 7639464,
+        "sha256": "1e31859eca996941dbdeb3ab9df208f4359422440110607494e74cc8cafc5b6a",
+        "magic": "0xfab11baf",
+        "version": 39,
+        "verified": true
+      },
+      "status": "ALL_IDENTITIES_VERIFIED"
+    },
+    "unity_natives": {
+      "tables": [
+        {
+          "table_id": 1,
+          "table_vaddr": "0x14587f8",
+          "table_file_offset": "0x144c7f8",
+          "method_count": 4,
+          "registered_class": "com/unity3d/player/ReflectionHelper",
+          "registration_call_site": "0x4ba6d4",
+          "methods": [
+            {
+              "name": "nativeProxyInvoke",
+              "signature": "(JLjava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;",
+              "rva": "0x4bae04",
+              "slot_vaddr": "0x14587f8",
+              "registered_class": "com/unity3d/player/ReflectionHelper",
+              "registration_call_site": "0x4ba6d4",
+              "evidence": {
+                "virtual_address": "0x4bae04",
+                "file_offset": "0x4b6e04",
+                "slot_vaddr": "0x14587f8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/ReflectionHelper",
+                "registration_call_site": "0x4ba6d4",
+                "table_rva": "0x14587f8",
+                "table_count": 4,
+                "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+              }
+            },
+            {
+              "name": "nativeProxyFinalize",
+              "signature": "(J)V",
+              "rva": "0x4baf24",
+              "slot_vaddr": "0x1458810",
+              "registered_class": "com/unity3d/player/ReflectionHelper",
+              "registration_call_site": "0x4ba6d4",
+              "evidence": {
+                "virtual_address": "0x4baf24",
+                "file_offset": "0x4b6f24",
+                "slot_vaddr": "0x1458810",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/ReflectionHelper",
+                "registration_call_site": "0x4ba6d4",
+                "table_rva": "0x14587f8",
+                "table_count": 4,
+                "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+              }
+            },
+            {
+              "name": "nativeProxyLogJNIInvokeException",
+              "signature": "(J)V",
+              "rva": "0x4baf64",
+              "slot_vaddr": "0x1458828",
+              "registered_class": "com/unity3d/player/ReflectionHelper",
+              "registration_call_site": "0x4ba6d4",
+              "evidence": {
+                "virtual_address": "0x4baf64",
+                "file_offset": "0x4b6f64",
+                "slot_vaddr": "0x1458828",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/ReflectionHelper",
+                "registration_call_site": "0x4ba6d4",
+                "table_rva": "0x14587f8",
+                "table_count": 4,
+                "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+              }
+            },
+            {
+              "name": "nativeProxyJNIFreeGCHandle",
+              "signature": "(J)V",
+              "rva": "0x4bafd8",
+              "slot_vaddr": "0x1458840",
+              "registered_class": "com/unity3d/player/ReflectionHelper",
+              "registration_call_site": "0x4ba6d4",
+              "evidence": {
+                "virtual_address": "0x4bafd8",
+                "file_offset": "0x4b6fd8",
+                "slot_vaddr": "0x1458840",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/ReflectionHelper",
+                "registration_call_site": "0x4ba6d4",
+                "table_rva": "0x14587f8",
+                "table_count": 4,
+                "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 2,
+          "table_vaddr": "0x1463400",
+          "table_file_offset": "0x1457400",
+          "method_count": 3,
+          "registered_class": "com/unity3d/player/GoogleARCoreApi",
+          "registration_call_site": "0xe5ebf4",
+          "methods": [
+            {
+              "name": "initializeARCore",
+              "signature": "(Landroid/app/Activity;)V",
+              "rva": "0xe60d54",
+              "slot_vaddr": "0x1463400",
+              "registered_class": "com/unity3d/player/GoogleARCoreApi",
+              "registration_call_site": "0xe5ebf4",
+              "evidence": {
+                "virtual_address": "0xe60d54",
+                "file_offset": "0xe5cd54",
+                "slot_vaddr": "0x1463400",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/GoogleARCoreApi",
+                "registration_call_site": "0xe5ebf4",
+                "table_rva": "0x1463400",
+                "table_count": 3,
+                "confidence_reason": "Class 'com/unity3d/player/GoogleARCoreApi' registered at call-site 0xe5ebf4 in table 0x1463400"
+              }
+            },
+            {
+              "name": "pauseARCore",
+              "signature": "()V",
+              "rva": "0xe60db8",
+              "slot_vaddr": "0x1463418",
+              "registered_class": "com/unity3d/player/GoogleARCoreApi",
+              "registration_call_site": "0xe5ebf4",
+              "evidence": {
+                "virtual_address": "0xe60db8",
+                "file_offset": "0xe5cdb8",
+                "slot_vaddr": "0x1463418",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/GoogleARCoreApi",
+                "registration_call_site": "0xe5ebf4",
+                "table_rva": "0x1463400",
+                "table_count": 3,
+                "confidence_reason": "Class 'com/unity3d/player/GoogleARCoreApi' registered at call-site 0xe5ebf4 in table 0x1463400"
+              }
+            },
+            {
+              "name": "resumeARCore",
+              "signature": "()V",
+              "rva": "0xe60e0c",
+              "slot_vaddr": "0x1463430",
+              "registered_class": "com/unity3d/player/GoogleARCoreApi",
+              "registration_call_site": "0xe5ebf4",
+              "evidence": {
+                "virtual_address": "0xe60e0c",
+                "file_offset": "0xe5ce0c",
+                "slot_vaddr": "0x1463430",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/GoogleARCoreApi",
+                "registration_call_site": "0xe5ebf4",
+                "table_rva": "0x1463400",
+                "table_count": 3,
+                "confidence_reason": "Class 'com/unity3d/player/GoogleARCoreApi' registered at call-site 0xe5ebf4 in table 0x1463400"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 3,
+          "table_vaddr": "0x1463450",
+          "table_file_offset": "0x1457450",
+          "method_count": 1,
+          "registered_class": "com/unity3d/player/OrientationLockListener",
+          "registration_call_site": "0xe61a18",
+          "methods": [
+            {
+              "name": "nativeUpdateOrientationLockState",
+              "signature": "(I)V",
+              "rva": "0xe61908",
+              "slot_vaddr": "0x1463450",
+              "registered_class": "com/unity3d/player/OrientationLockListener",
+              "registration_call_site": "0xe61a18",
+              "evidence": {
+                "virtual_address": "0xe61908",
+                "file_offset": "0xe5d908",
+                "slot_vaddr": "0x1463450",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/OrientationLockListener",
+                "registration_call_site": "0xe61a18",
+                "table_rva": "0x1463450",
+                "table_count": 1,
+                "confidence_reason": "Class 'com/unity3d/player/OrientationLockListener' registered at call-site 0xe61a18 in table 0x1463450"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 4,
+          "table_vaddr": "0x1463480",
+          "table_file_offset": "0x1457480",
+          "method_count": 1,
+          "registered_class": "com/unity3d/player/UnityCoreAssetPacksStatusCallbacks",
+          "registration_call_site": "0xe631b8",
+          "methods": [
+            {
+              "name": "nativeStatusQueryResult",
+              "signature": "(Ljava/lang/String;II)V",
+              "rva": "0xe62f70",
+              "slot_vaddr": "0x1463480",
+              "registered_class": "com/unity3d/player/UnityCoreAssetPacksStatusCallbacks",
+              "registration_call_site": "0xe631b8",
+              "evidence": {
+                "virtual_address": "0xe62f70",
+                "file_offset": "0xe5ef70",
+                "slot_vaddr": "0x1463480",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityCoreAssetPacksStatusCallbacks",
+                "registration_call_site": "0xe631b8",
+                "table_rva": "0x1463480",
+                "table_count": 1,
+                "confidence_reason": "Class 'com/unity3d/player/UnityCoreAssetPacksStatusCallbacks' registered at call-site 0xe631b8 in table 0x1463480"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 5,
+          "table_vaddr": "0x1463498",
+          "table_file_offset": "0x1457498",
+          "method_count": 2,
+          "registered_class": "com/unity3d/player/HFPStatus",
+          "registration_call_site": "0xe63a28",
+          "methods": [
+            {
+              "name": "initHFPStatusJni",
+              "signature": "()V",
+              "rva": "0xe6392c",
+              "slot_vaddr": "0x1463498",
+              "registered_class": "com/unity3d/player/HFPStatus",
+              "registration_call_site": "0xe63a28",
+              "evidence": {
+                "virtual_address": "0xe6392c",
+                "file_offset": "0xe5f92c",
+                "slot_vaddr": "0x1463498",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/HFPStatus",
+                "registration_call_site": "0xe63a28",
+                "table_rva": "0x1463498",
+                "table_count": 2,
+                "confidence_reason": "Class 'com/unity3d/player/HFPStatus' registered at call-site 0xe63a28 in table 0x1463498"
+              }
+            },
+            {
+              "name": "deinitHFPStatusJni",
+              "signature": "()V",
+              "rva": "0xe63978",
+              "slot_vaddr": "0x14634b0",
+              "registered_class": "com/unity3d/player/HFPStatus",
+              "registration_call_site": "0xe63a28",
+              "evidence": {
+                "virtual_address": "0xe63978",
+                "file_offset": "0xe5f978",
+                "slot_vaddr": "0x14634b0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/HFPStatus",
+                "registration_call_site": "0xe63a28",
+                "table_rva": "0x1463498",
+                "table_count": 2,
+                "confidence_reason": "Class 'com/unity3d/player/HFPStatus' registered at call-site 0xe63a28 in table 0x1463498"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 6,
+          "table_vaddr": "0x1463550",
+          "table_file_offset": "0x1457550",
+          "method_count": 3,
+          "registered_class": "com/unity3d/player/Camera2Wrapper",
+          "registration_call_site": "0xe7cdcc",
+          "methods": [
+            {
+              "name": "initCamera2Jni",
+              "signature": "()V",
+              "rva": "0xe7cd18",
+              "slot_vaddr": "0x1463550",
+              "registered_class": "com/unity3d/player/Camera2Wrapper",
+              "registration_call_site": "0xe7cdcc",
+              "evidence": {
+                "virtual_address": "0xe7cd18",
+                "file_offset": "0xe78d18",
+                "slot_vaddr": "0x1463550",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/Camera2Wrapper",
+                "registration_call_site": "0xe7cdcc",
+                "table_rva": "0x1463550",
+                "table_count": 3,
+                "confidence_reason": "Class 'com/unity3d/player/Camera2Wrapper' registered at call-site 0xe7cdcc in table 0x1463550"
+              }
+            },
+            {
+              "name": "nativeFrameReady",
+              "signature": "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;III)V",
+              "rva": "0xe6fd28",
+              "slot_vaddr": "0x1463568",
+              "registered_class": "com/unity3d/player/Camera2Wrapper",
+              "registration_call_site": "0xe7cdcc",
+              "evidence": {
+                "virtual_address": "0xe6fd28",
+                "file_offset": "0xe6bd28",
+                "slot_vaddr": "0x1463568",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/Camera2Wrapper",
+                "registration_call_site": "0xe7cdcc",
+                "table_rva": "0x1463550",
+                "table_count": 3,
+                "confidence_reason": "Class 'com/unity3d/player/Camera2Wrapper' registered at call-site 0xe7cdcc in table 0x1463550"
+              }
+            },
+            {
+              "name": "nativeSurfaceTextureReady",
+              "signature": "(Ljava/lang/Object;)V",
+              "rva": "0xe6fbc0",
+              "slot_vaddr": "0x1463580",
+              "registered_class": "com/unity3d/player/Camera2Wrapper",
+              "registration_call_site": "0xe7cdcc",
+              "evidence": {
+                "virtual_address": "0xe6fbc0",
+                "file_offset": "0xe6bbc0",
+                "slot_vaddr": "0x1463580",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/Camera2Wrapper",
+                "registration_call_site": "0xe7cdcc",
+                "table_rva": "0x1463550",
+                "table_count": 3,
+                "confidence_reason": "Class 'com/unity3d/player/Camera2Wrapper' registered at call-site 0xe7cdcc in table 0x1463550"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 7,
+          "table_vaddr": "0x14635d8",
+          "table_file_offset": "0x14575d8",
+          "method_count": 1,
+          "registered_class": "com/unity3d/player/AudioVolumeHandler",
+          "registration_call_site": "0xe82b3c",
+          "methods": [
+            {
+              "name": "onAudioVolumeChanged",
+              "signature": "(I)V",
+              "rva": "0xe82a24",
+              "slot_vaddr": "0x14635d8",
+              "registered_class": "com/unity3d/player/AudioVolumeHandler",
+              "registration_call_site": "0xe82b3c",
+              "evidence": {
+                "virtual_address": "0xe82a24",
+                "file_offset": "0xe7ea24",
+                "slot_vaddr": "0x14635d8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/AudioVolumeHandler",
+                "registration_call_site": "0xe82b3c",
+                "table_rva": "0x14635d8",
+                "table_count": 1,
+                "confidence_reason": "Class 'com/unity3d/player/AudioVolumeHandler' registered at call-site 0xe82b3c in table 0x14635d8"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 8,
+          "table_vaddr": "0x14635f0",
+          "table_file_offset": "0x14575f0",
+          "method_count": 12,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "methods": [
+            {
+              "name": "initJni",
+              "signature": "(Landroid/content/Context;ILjava/lang/String;)V",
+              "rva": "0xe85c60",
+              "slot_vaddr": "0x14635f0",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe85c60",
+                "file_offset": "0xe81c60",
+                "slot_vaddr": "0x14635f0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeApplicationUnload",
+              "signature": "()V",
+              "rva": "0xe85e88",
+              "slot_vaddr": "0x1463608",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe85e88",
+                "file_offset": "0xe81e88",
+                "slot_vaddr": "0x1463608",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeInjectEvent",
+              "signature": "(Landroid/view/InputEvent;I)Z",
+              "rva": "0xe8623c",
+              "slot_vaddr": "0x1463620",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe8623c",
+                "file_offset": "0xe8223c",
+                "slot_vaddr": "0x1463620",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeUnitySendMessage",
+              "signature": "(Ljava/lang/String;Ljava/lang/String;[B)V",
+              "rva": "0xe8684c",
+              "slot_vaddr": "0x1463638",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe8684c",
+                "file_offset": "0xe8284c",
+                "slot_vaddr": "0x1463638",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeIsAutorotationOn",
+              "signature": "()Z",
+              "rva": "0xe86a18",
+              "slot_vaddr": "0x1463650",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86a18",
+                "file_offset": "0xe82a18",
+                "slot_vaddr": "0x1463650",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeMuteMasterAudio",
+              "signature": "(Z)V",
+              "rva": "0xe86a78",
+              "slot_vaddr": "0x1463668",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86a78",
+                "file_offset": "0xe82a78",
+                "slot_vaddr": "0x1463668",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeSetLaunchURL",
+              "signature": "(Ljava/lang/String;)V",
+              "rva": "0xe86adc",
+              "slot_vaddr": "0x1463680",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86adc",
+                "file_offset": "0xe82adc",
+                "slot_vaddr": "0x1463680",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "permissionResponseToNative",
+              "signature": "(JZ)V",
+              "rva": "0xe86c14",
+              "slot_vaddr": "0x1463698",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86c14",
+                "file_offset": "0xe82c14",
+                "slot_vaddr": "0x1463698",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeHidePreservedContent",
+              "signature": "()V",
+              "rva": "0xe86c98",
+              "slot_vaddr": "0x14636b0",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86c98",
+                "file_offset": "0xe82c98",
+                "slot_vaddr": "0x14636b0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeViewPaddingChanged",
+              "signature": "(IIIII)V",
+              "rva": "0xe86ce8",
+              "slot_vaddr": "0x14636c8",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86ce8",
+                "file_offset": "0xe82ce8",
+                "slot_vaddr": "0x14636c8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeGetMainWindowIndex",
+              "signature": "()I",
+              "rva": "0xe86e74",
+              "slot_vaddr": "0x14636e0",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86e74",
+                "file_offset": "0xe82e74",
+                "slot_vaddr": "0x14636e0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            },
+            {
+              "name": "nativeCrashNow",
+              "signature": "()V",
+              "rva": "0xe86ecc",
+              "slot_vaddr": "0x14636f8",
+              "registered_class": "com/unity3d/player/UnityPlayer",
+              "registration_call_site": "0xe87080",
+              "evidence": {
+                "virtual_address": "0xe86ecc",
+                "file_offset": "0xe82ecc",
+                "slot_vaddr": "0x14636f8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayer",
+                "registration_call_site": "0xe87080",
+                "table_rva": "0x14635f0",
+                "table_count": 12,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 9,
+          "table_vaddr": "0x1463710",
+          "table_file_offset": "0x1457710",
+          "method_count": 20,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "methods": [
+            {
+              "name": "nativeConfigurationChanged",
+              "signature": "(Landroid/content/res/Configuration;)V",
+              "rva": "0xe8614c",
+              "slot_vaddr": "0x1463710",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe8614c",
+                "file_offset": "0xe8214c",
+                "slot_vaddr": "0x1463710",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeRender",
+              "signature": "()Z",
+              "rva": "0xe861dc",
+              "slot_vaddr": "0x1463728",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe861dc",
+                "file_offset": "0xe821dc",
+                "slot_vaddr": "0x1463728",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativePause",
+              "signature": "()Z",
+              "rva": "0xe85dc4",
+              "slot_vaddr": "0x1463740",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85dc4",
+                "file_offset": "0xe81dc4",
+                "slot_vaddr": "0x1463740",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeResume",
+              "signature": "()V",
+              "rva": "0xe85e28",
+              "slot_vaddr": "0x1463758",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85e28",
+                "file_offset": "0xe81e28",
+                "slot_vaddr": "0x1463758",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeDone",
+              "signature": "()Z",
+              "rva": "0xe85ce4",
+              "slot_vaddr": "0x1463770",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85ce4",
+                "file_offset": "0xe81ce4",
+                "slot_vaddr": "0x1463770",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeMemoryUsageChanged",
+              "signature": "(I)V",
+              "rva": "0xe85d70",
+              "slot_vaddr": "0x1463788",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85d70",
+                "file_offset": "0xe81d70",
+                "slot_vaddr": "0x1463788",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeFocusChanged",
+              "signature": "(Z)V",
+              "rva": "0xe85ed8",
+              "slot_vaddr": "0x14637a0",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85ed8",
+                "file_offset": "0xe81ed8",
+                "slot_vaddr": "0x14637a0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeOrientationChanged",
+              "signature": "(II)V",
+              "rva": "0xe86d50",
+              "slot_vaddr": "0x14637b8",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe86d50",
+                "file_offset": "0xe82d50",
+                "slot_vaddr": "0x14637b8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeRecreateGfxState",
+              "signature": "(ILandroid/view/Surface;)V",
+              "rva": "0xe85f3c",
+              "slot_vaddr": "0x14637d0",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85f3c",
+                "file_offset": "0xe81f3c",
+                "slot_vaddr": "0x14637d0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSendSurfaceChangedEvent",
+              "signature": "()V",
+              "rva": "0xe85fa4",
+              "slot_vaddr": "0x14637e8",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85fa4",
+                "file_offset": "0xe81fa4",
+                "slot_vaddr": "0x14637e8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeOnApplyWindowInsets",
+              "signature": "(Landroid/view/WindowInsets;)V",
+              "rva": "0xe85ff8",
+              "slot_vaddr": "0x1463800",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe85ff8",
+                "file_offset": "0xe81ff8",
+                "slot_vaddr": "0x1463800",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeReportKeyboardConfigChanged",
+              "signature": "()V",
+              "rva": "0xe867ac",
+              "slot_vaddr": "0x1463818",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe867ac",
+                "file_offset": "0xe827ac",
+                "slot_vaddr": "0x1463818",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSetInputArea",
+              "signature": "(IIII)V",
+              "rva": "0xe864fc",
+              "slot_vaddr": "0x1463830",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe864fc",
+                "file_offset": "0xe824fc",
+                "slot_vaddr": "0x1463830",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSetKeyboardIsVisible",
+              "signature": "(Z)V",
+              "rva": "0xe86584",
+              "slot_vaddr": "0x1463848",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe86584",
+                "file_offset": "0xe82584",
+                "slot_vaddr": "0x1463848",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSetInputString",
+              "signature": "(Ljava/lang/String;)V",
+              "rva": "0xe865e4",
+              "slot_vaddr": "0x1463860",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe865e4",
+                "file_offset": "0xe825e4",
+                "slot_vaddr": "0x1463860",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSetInputSelection",
+              "signature": "(II)V",
+              "rva": "0xe8668c",
+              "slot_vaddr": "0x1463878",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe8668c",
+                "file_offset": "0xe8268c",
+                "slot_vaddr": "0x1463878",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSoftInputClosed",
+              "signature": "()V",
+              "rva": "0xe867f4",
+              "slot_vaddr": "0x1463890",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe867f4",
+                "file_offset": "0xe827f4",
+                "slot_vaddr": "0x1463890",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSoftInputCanceled",
+              "signature": "()V",
+              "rva": "0xe866fc",
+              "slot_vaddr": "0x14638a8",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe866fc",
+                "file_offset": "0xe826fc",
+                "slot_vaddr": "0x14638a8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeSoftInputLostFocus",
+              "signature": "()V",
+              "rva": "0xe86754",
+              "slot_vaddr": "0x14638c0",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe86754",
+                "file_offset": "0xe82754",
+                "slot_vaddr": "0x14638c0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            },
+            {
+              "name": "nativeGetNoWindowMode",
+              "signature": "()Z",
+              "rva": "0xe86e04",
+              "slot_vaddr": "0x14638d8",
+              "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+              "registration_call_site": "0xe8716c",
+              "evidence": {
+                "virtual_address": "0xe86e04",
+                "file_offset": "0xe82e04",
+                "slot_vaddr": "0x14638d8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+                "registration_call_site": "0xe8716c",
+                "table_rva": "0x1463710",
+                "table_count": 20,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 10,
+          "table_vaddr": "0x14638f0",
+          "table_file_offset": "0x14578f0",
+          "method_count": 2,
+          "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+          "registration_call_site": "0xe87258",
+          "methods": [
+            {
+              "name": "nativeOrientationChanged",
+              "signature": "(II)V",
+              "rva": "0xe86d50",
+              "slot_vaddr": "0x14638f0",
+              "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+              "registration_call_site": "0xe87258",
+              "evidence": {
+                "virtual_address": "0xe86d50",
+                "file_offset": "0xe82d50",
+                "slot_vaddr": "0x14638f0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+                "registration_call_site": "0xe87258",
+                "table_rva": "0x14638f0",
+                "table_count": 2,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForGameActivity' registered at call-site 0xe87258 in table 0x14638f0"
+              }
+            },
+            {
+              "name": "nativeUnityPlayerSetRunning",
+              "signature": "(Z)V",
+              "rva": "0xe86db0",
+              "slot_vaddr": "0x1463908",
+              "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+              "registration_call_site": "0xe87258",
+              "evidence": {
+                "virtual_address": "0xe86db0",
+                "file_offset": "0xe82db0",
+                "slot_vaddr": "0x1463908",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+                "registration_call_site": "0xe87258",
+                "table_rva": "0x14638f0",
+                "table_count": 2,
+                "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForGameActivity' registered at call-site 0xe87258 in table 0x14638f0"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 11,
+          "table_vaddr": "0x1463920",
+          "table_file_offset": "0x1457920",
+          "method_count": 2,
+          "registered_class": "com/unity3d/player/AudioDeviceObserver",
+          "registration_call_site": "0xe87344",
+          "methods": [
+            {
+              "name": "AndroidAudioDeviceListChanged",
+              "signature": "()V",
+              "rva": "0x85b7d4",
+              "slot_vaddr": "0x1463920",
+              "registered_class": "com/unity3d/player/AudioDeviceObserver",
+              "registration_call_site": "0xe87344",
+              "evidence": {
+                "virtual_address": "0x85b7d4",
+                "file_offset": "0x8577d4",
+                "slot_vaddr": "0x1463920",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/AudioDeviceObserver",
+                "registration_call_site": "0xe87344",
+                "table_rva": "0x1463920",
+                "table_count": 2,
+                "confidence_reason": "Class 'com/unity3d/player/AudioDeviceObserver' registered at call-site 0xe87344 in table 0x1463920"
+              }
+            },
+            {
+              "name": "AndroidAudioLoggingEnabled",
+              "signature": "()Z",
+              "rva": "0x85b828",
+              "slot_vaddr": "0x1463938",
+              "registered_class": "com/unity3d/player/AudioDeviceObserver",
+              "registration_call_site": "0xe87344",
+              "evidence": {
+                "virtual_address": "0x85b828",
+                "file_offset": "0x857828",
+                "slot_vaddr": "0x1463938",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/AudioDeviceObserver",
+                "registration_call_site": "0xe87344",
+                "table_rva": "0x1463920",
+                "table_count": 2,
+                "confidence_reason": "Class 'com/unity3d/player/AudioDeviceObserver' registered at call-site 0xe87344 in table 0x1463920"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 12,
+          "table_vaddr": "0x1463958",
+          "table_file_offset": "0x1457958",
+          "method_count": 16,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "methods": [
+            {
+              "name": "getRootNodeIds",
+              "signature": "()[I",
+              "rva": "0xe89120",
+              "slot_vaddr": "0x1463958",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe89120",
+                "file_offset": "0xe85120",
+                "slot_vaddr": "0x1463958",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "hitTest",
+              "signature": "(FF)I",
+              "rva": "0xe892d0",
+              "slot_vaddr": "0x1463970",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe892d0",
+                "file_offset": "0xe852d0",
+                "slot_vaddr": "0x1463970",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "populateNodeInfo",
+              "signature": "(Landroid/view/accessibility/AccessibilityNodeInfo;ILandroid/view/View;)Z",
+              "rva": "0xe89e4c",
+              "slot_vaddr": "0x1463988",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe89e4c",
+                "file_offset": "0xe85e4c",
+                "slot_vaddr": "0x1463988",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "isNodeInvokable",
+              "signature": "(I)Z",
+              "rva": "0xe8a2d8",
+              "slot_vaddr": "0x14639a0",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8a2d8",
+                "file_offset": "0xe862d8",
+                "slot_vaddr": "0x14639a0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "isNodeSlider",
+              "signature": "(I)Z",
+              "rva": "0xe8a4c4",
+              "slot_vaddr": "0x14639b8",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8a4c4",
+                "file_offset": "0xe864c4",
+                "slot_vaddr": "0x14639b8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "isNodeScrollable",
+              "signature": "(I)Z",
+              "rva": "0xe8a6b0",
+              "slot_vaddr": "0x14639d0",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8a6b0",
+                "file_offset": "0xe866b0",
+                "slot_vaddr": "0x14639d0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "isNodeDismissable",
+              "signature": "(I)Z",
+              "rva": "0xe8a89c",
+              "slot_vaddr": "0x14639e8",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8a89c",
+                "file_offset": "0xe8689c",
+                "slot_vaddr": "0x14639e8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onNodeFocusChanged",
+              "signature": "(IZ)V",
+              "rva": "0xe8aa88",
+              "slot_vaddr": "0x1463a00",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8aa88",
+                "file_offset": "0xe86a88",
+                "slot_vaddr": "0x1463a00",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onNodeInvoked",
+              "signature": "(I)Z",
+              "rva": "0xe8ab48",
+              "slot_vaddr": "0x1463a18",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8ab48",
+                "file_offset": "0xe86b48",
+                "slot_vaddr": "0x1463a18",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onNodeIncremented",
+              "signature": "(I)Z",
+              "rva": "0xe8ac18",
+              "slot_vaddr": "0x1463a30",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8ac18",
+                "file_offset": "0xe86c18",
+                "slot_vaddr": "0x1463a30",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onNodeDecremented",
+              "signature": "(I)Z",
+              "rva": "0xe8ace8",
+              "slot_vaddr": "0x1463a48",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8ace8",
+                "file_offset": "0xe86ce8",
+                "slot_vaddr": "0x1463a48",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onNodeScrolled",
+              "signature": "(II)Z",
+              "rva": "0xe8adb8",
+              "slot_vaddr": "0x1463a60",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8adb8",
+                "file_offset": "0xe86db8",
+                "slot_vaddr": "0x1463a60",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onNodeDismissed",
+              "signature": "(I)Z",
+              "rva": "0xe8aebc",
+              "slot_vaddr": "0x1463a78",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8aebc",
+                "file_offset": "0xe86ebc",
+                "slot_vaddr": "0x1463a78",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onScreenReaderStatusChanged",
+              "signature": "(Z)V",
+              "rva": "0xe8af8c",
+              "slot_vaddr": "0x1463a90",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8af8c",
+                "file_offset": "0xe86f8c",
+                "slot_vaddr": "0x1463a90",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onFontScaleChanged",
+              "signature": "(F)V",
+              "rva": "0xe8b020",
+              "slot_vaddr": "0x1463aa8",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8b020",
+                "file_offset": "0xe87020",
+                "slot_vaddr": "0x1463aa8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            },
+            {
+              "name": "onClosedCaptioningStatusChanged",
+              "signature": "(Z)V",
+              "rva": "0xe8b09c",
+              "slot_vaddr": "0x1463ac0",
+              "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+              "registration_call_site": "0xe8b1dc",
+              "evidence": {
+                "virtual_address": "0xe8b09c",
+                "file_offset": "0xe8709c",
+                "slot_vaddr": "0x1463ac0",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+                "registration_call_site": "0xe8b1dc",
+                "table_rva": "0x1463958",
+                "table_count": 16,
+                "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 13,
+          "table_vaddr": "0x1463ae8",
+          "table_file_offset": "0x1457ae8",
+          "method_count": 1,
+          "registered_class": "com/unity3d/player/SoftInputProvider",
+          "registration_call_site": "0xe96588",
+          "methods": [
+            {
+              "name": "nativeGetSoftInputType",
+              "signature": "()I",
+              "rva": "0xe96460",
+              "slot_vaddr": "0x1463ae8",
+              "registered_class": "com/unity3d/player/SoftInputProvider",
+              "registration_call_site": "0xe96588",
+              "evidence": {
+                "virtual_address": "0xe96460",
+                "file_offset": "0xe92460",
+                "slot_vaddr": "0x1463ae8",
+                "segment_flags": "r-x",
+                "registered_class": "com/unity3d/player/SoftInputProvider",
+                "registration_call_site": "0xe96588",
+                "table_rva": "0x1463ae8",
+                "table_count": 1,
+                "confidence_reason": "Class 'com/unity3d/player/SoftInputProvider' registered at call-site 0xe96588 in table 0x1463ae8"
+              }
+            }
+          ]
+        },
+        {
+          "table_id": 14,
+          "table_vaddr": "0x146b710",
+          "table_file_offset": "0x145f710",
+          "method_count": 3,
+          "registered_class": "org/fmod/FMODAudioDevice",
+          "registration_call_site": "0x108e8c8",
+          "methods": [
+            {
+              "name": "fmodGetInfo",
+              "signature": "(I)I",
+              "rva": "0x108f264",
+              "slot_vaddr": "0x146b710",
+              "registered_class": "org/fmod/FMODAudioDevice",
+              "registration_call_site": "0x108e8c8",
+              "evidence": {
+                "virtual_address": "0x108f264",
+                "file_offset": "0x108b264",
+                "slot_vaddr": "0x146b710",
+                "segment_flags": "r-x",
+                "registered_class": "org/fmod/FMODAudioDevice",
+                "registration_call_site": "0x108e8c8",
+                "table_rva": "0x146b710",
+                "table_count": 3,
+                "confidence_reason": "Class 'org/fmod/FMODAudioDevice' registered at call-site 0x108e8c8 in table 0x146b710"
+              }
+            },
+            {
+              "name": "fmodProcess",
+              "signature": "(Ljava/nio/ByteBuffer;)I",
+              "rva": "0x108f32c",
+              "slot_vaddr": "0x146b728",
+              "registered_class": "org/fmod/FMODAudioDevice",
+              "registration_call_site": "0x108e8c8",
+              "evidence": {
+                "virtual_address": "0x108f32c",
+                "file_offset": "0x108b32c",
+                "slot_vaddr": "0x146b728",
+                "segment_flags": "r-x",
+                "registered_class": "org/fmod/FMODAudioDevice",
+                "registration_call_site": "0x108e8c8",
+                "table_rva": "0x146b710",
+                "table_count": 3,
+                "confidence_reason": "Class 'org/fmod/FMODAudioDevice' registered at call-site 0x108e8c8 in table 0x146b710"
+              }
+            },
+            {
+              "name": "fmodProcessMicData",
+              "signature": "(Ljava/nio/ByteBuffer;I)I",
+              "rva": "0x108f3b8",
+              "slot_vaddr": "0x146b740",
+              "registered_class": "org/fmod/FMODAudioDevice",
+              "registration_call_site": "0x108e8c8",
+              "evidence": {
+                "virtual_address": "0x108f3b8",
+                "file_offset": "0x108b3b8",
+                "slot_vaddr": "0x146b740",
+                "segment_flags": "r-x",
+                "registered_class": "org/fmod/FMODAudioDevice",
+                "registration_call_site": "0x108e8c8",
+                "table_rva": "0x146b710",
+                "table_count": 3,
+                "confidence_reason": "Class 'org/fmod/FMODAudioDevice' registered at call-site 0x108e8c8 in table 0x146b710"
+              }
+            }
+          ]
+        }
+      ],
+      "lifecycle_entrypoints": {
+        "JNI_OnLoad": {
+          "rva": "0xe86f0c",
+          "size": 204,
+          "signature": "(JavaVM*, void*) -> jint",
+          "confidence": "CONFIRMED_EXPORT",
+          "evidence": {
+            "virtual_address": "0xe86f0c",
+            "file_offset": "0xe82f0c",
+            "segment_flags": "r-x",
+            "confidence_reason": "Exported symbol JNI_OnLoad in .dynsym"
+          }
+        },
+        "JNI_OnUnload": {
+          "rva": "0xe87388",
+          "size": 124,
+          "signature": "(JavaVM*, void*) -> void",
+          "confidence": "CONFIRMED_EXPORT",
+          "evidence": {
+            "virtual_address": "0xe87388",
+            "file_offset": "0xe83388",
+            "segment_flags": "r-x",
+            "confidence_reason": "Exported symbol JNI_OnUnload in .dynsym"
+          }
+        },
+        "nativeProxyInvoke": {
+          "rva": "0x4bae04",
+          "signature": "(JLjava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;",
+          "table_id": 1,
+          "registered_class": "com/unity3d/player/ReflectionHelper",
+          "registration_call_site": "0x4ba6d4",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x4bae04",
+            "file_offset": "0x4b6e04",
+            "slot_vaddr": "0x14587f8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/ReflectionHelper",
+            "registration_call_site": "0x4ba6d4",
+            "table_rva": "0x14587f8",
+            "table_count": 4,
+            "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+          }
+        },
+        "nativeProxyFinalize": {
+          "rva": "0x4baf24",
+          "signature": "(J)V",
+          "table_id": 1,
+          "registered_class": "com/unity3d/player/ReflectionHelper",
+          "registration_call_site": "0x4ba6d4",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x4baf24",
+            "file_offset": "0x4b6f24",
+            "slot_vaddr": "0x1458810",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/ReflectionHelper",
+            "registration_call_site": "0x4ba6d4",
+            "table_rva": "0x14587f8",
+            "table_count": 4,
+            "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+          }
+        },
+        "nativeProxyLogJNIInvokeException": {
+          "rva": "0x4baf64",
+          "signature": "(J)V",
+          "table_id": 1,
+          "registered_class": "com/unity3d/player/ReflectionHelper",
+          "registration_call_site": "0x4ba6d4",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x4baf64",
+            "file_offset": "0x4b6f64",
+            "slot_vaddr": "0x1458828",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/ReflectionHelper",
+            "registration_call_site": "0x4ba6d4",
+            "table_rva": "0x14587f8",
+            "table_count": 4,
+            "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+          }
+        },
+        "nativeProxyJNIFreeGCHandle": {
+          "rva": "0x4bafd8",
+          "signature": "(J)V",
+          "table_id": 1,
+          "registered_class": "com/unity3d/player/ReflectionHelper",
+          "registration_call_site": "0x4ba6d4",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x4bafd8",
+            "file_offset": "0x4b6fd8",
+            "slot_vaddr": "0x1458840",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/ReflectionHelper",
+            "registration_call_site": "0x4ba6d4",
+            "table_rva": "0x14587f8",
+            "table_count": 4,
+            "confidence_reason": "Class 'com/unity3d/player/ReflectionHelper' registered at call-site 0x4ba6d4 in table 0x14587f8"
+          }
+        },
+        "initializeARCore": {
+          "rva": "0xe60d54",
+          "signature": "(Landroid/app/Activity;)V",
+          "table_id": 2,
+          "registered_class": "com/unity3d/player/GoogleARCoreApi",
+          "registration_call_site": "0xe5ebf4",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe60d54",
+            "file_offset": "0xe5cd54",
+            "slot_vaddr": "0x1463400",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/GoogleARCoreApi",
+            "registration_call_site": "0xe5ebf4",
+            "table_rva": "0x1463400",
+            "table_count": 3,
+            "confidence_reason": "Class 'com/unity3d/player/GoogleARCoreApi' registered at call-site 0xe5ebf4 in table 0x1463400"
+          }
+        },
+        "pauseARCore": {
+          "rva": "0xe60db8",
+          "signature": "()V",
+          "table_id": 2,
+          "registered_class": "com/unity3d/player/GoogleARCoreApi",
+          "registration_call_site": "0xe5ebf4",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe60db8",
+            "file_offset": "0xe5cdb8",
+            "slot_vaddr": "0x1463418",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/GoogleARCoreApi",
+            "registration_call_site": "0xe5ebf4",
+            "table_rva": "0x1463400",
+            "table_count": 3,
+            "confidence_reason": "Class 'com/unity3d/player/GoogleARCoreApi' registered at call-site 0xe5ebf4 in table 0x1463400"
+          }
+        },
+        "resumeARCore": {
+          "rva": "0xe60e0c",
+          "signature": "()V",
+          "table_id": 2,
+          "registered_class": "com/unity3d/player/GoogleARCoreApi",
+          "registration_call_site": "0xe5ebf4",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe60e0c",
+            "file_offset": "0xe5ce0c",
+            "slot_vaddr": "0x1463430",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/GoogleARCoreApi",
+            "registration_call_site": "0xe5ebf4",
+            "table_rva": "0x1463400",
+            "table_count": 3,
+            "confidence_reason": "Class 'com/unity3d/player/GoogleARCoreApi' registered at call-site 0xe5ebf4 in table 0x1463400"
+          }
+        },
+        "nativeUpdateOrientationLockState": {
+          "rva": "0xe61908",
+          "signature": "(I)V",
+          "table_id": 3,
+          "registered_class": "com/unity3d/player/OrientationLockListener",
+          "registration_call_site": "0xe61a18",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe61908",
+            "file_offset": "0xe5d908",
+            "slot_vaddr": "0x1463450",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/OrientationLockListener",
+            "registration_call_site": "0xe61a18",
+            "table_rva": "0x1463450",
+            "table_count": 1,
+            "confidence_reason": "Class 'com/unity3d/player/OrientationLockListener' registered at call-site 0xe61a18 in table 0x1463450"
+          }
+        },
+        "nativeStatusQueryResult": {
+          "rva": "0xe62f70",
+          "signature": "(Ljava/lang/String;II)V",
+          "table_id": 4,
+          "registered_class": "com/unity3d/player/UnityCoreAssetPacksStatusCallbacks",
+          "registration_call_site": "0xe631b8",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe62f70",
+            "file_offset": "0xe5ef70",
+            "slot_vaddr": "0x1463480",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityCoreAssetPacksStatusCallbacks",
+            "registration_call_site": "0xe631b8",
+            "table_rva": "0x1463480",
+            "table_count": 1,
+            "confidence_reason": "Class 'com/unity3d/player/UnityCoreAssetPacksStatusCallbacks' registered at call-site 0xe631b8 in table 0x1463480"
+          }
+        },
+        "initHFPStatusJni": {
+          "rva": "0xe6392c",
+          "signature": "()V",
+          "table_id": 5,
+          "registered_class": "com/unity3d/player/HFPStatus",
+          "registration_call_site": "0xe63a28",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe6392c",
+            "file_offset": "0xe5f92c",
+            "slot_vaddr": "0x1463498",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/HFPStatus",
+            "registration_call_site": "0xe63a28",
+            "table_rva": "0x1463498",
+            "table_count": 2,
+            "confidence_reason": "Class 'com/unity3d/player/HFPStatus' registered at call-site 0xe63a28 in table 0x1463498"
+          }
+        },
+        "deinitHFPStatusJni": {
+          "rva": "0xe63978",
+          "signature": "()V",
+          "table_id": 5,
+          "registered_class": "com/unity3d/player/HFPStatus",
+          "registration_call_site": "0xe63a28",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe63978",
+            "file_offset": "0xe5f978",
+            "slot_vaddr": "0x14634b0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/HFPStatus",
+            "registration_call_site": "0xe63a28",
+            "table_rva": "0x1463498",
+            "table_count": 2,
+            "confidence_reason": "Class 'com/unity3d/player/HFPStatus' registered at call-site 0xe63a28 in table 0x1463498"
+          }
+        },
+        "initCamera2Jni": {
+          "rva": "0xe7cd18",
+          "signature": "()V",
+          "table_id": 6,
+          "registered_class": "com/unity3d/player/Camera2Wrapper",
+          "registration_call_site": "0xe7cdcc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe7cd18",
+            "file_offset": "0xe78d18",
+            "slot_vaddr": "0x1463550",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/Camera2Wrapper",
+            "registration_call_site": "0xe7cdcc",
+            "table_rva": "0x1463550",
+            "table_count": 3,
+            "confidence_reason": "Class 'com/unity3d/player/Camera2Wrapper' registered at call-site 0xe7cdcc in table 0x1463550"
+          }
+        },
+        "nativeFrameReady": {
+          "rva": "0xe6fd28",
+          "signature": "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;III)V",
+          "table_id": 6,
+          "registered_class": "com/unity3d/player/Camera2Wrapper",
+          "registration_call_site": "0xe7cdcc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe6fd28",
+            "file_offset": "0xe6bd28",
+            "slot_vaddr": "0x1463568",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/Camera2Wrapper",
+            "registration_call_site": "0xe7cdcc",
+            "table_rva": "0x1463550",
+            "table_count": 3,
+            "confidence_reason": "Class 'com/unity3d/player/Camera2Wrapper' registered at call-site 0xe7cdcc in table 0x1463550"
+          }
+        },
+        "nativeSurfaceTextureReady": {
+          "rva": "0xe6fbc0",
+          "signature": "(Ljava/lang/Object;)V",
+          "table_id": 6,
+          "registered_class": "com/unity3d/player/Camera2Wrapper",
+          "registration_call_site": "0xe7cdcc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe6fbc0",
+            "file_offset": "0xe6bbc0",
+            "slot_vaddr": "0x1463580",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/Camera2Wrapper",
+            "registration_call_site": "0xe7cdcc",
+            "table_rva": "0x1463550",
+            "table_count": 3,
+            "confidence_reason": "Class 'com/unity3d/player/Camera2Wrapper' registered at call-site 0xe7cdcc in table 0x1463550"
+          }
+        },
+        "onAudioVolumeChanged": {
+          "rva": "0xe82a24",
+          "signature": "(I)V",
+          "table_id": 7,
+          "registered_class": "com/unity3d/player/AudioVolumeHandler",
+          "registration_call_site": "0xe82b3c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe82a24",
+            "file_offset": "0xe7ea24",
+            "slot_vaddr": "0x14635d8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/AudioVolumeHandler",
+            "registration_call_site": "0xe82b3c",
+            "table_rva": "0x14635d8",
+            "table_count": 1,
+            "confidence_reason": "Class 'com/unity3d/player/AudioVolumeHandler' registered at call-site 0xe82b3c in table 0x14635d8"
+          }
+        },
+        "initJni": {
+          "rva": "0xe85c60",
+          "signature": "(Landroid/content/Context;ILjava/lang/String;)V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85c60",
+            "file_offset": "0xe81c60",
+            "slot_vaddr": "0x14635f0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeApplicationUnload": {
+          "rva": "0xe85e88",
+          "signature": "()V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85e88",
+            "file_offset": "0xe81e88",
+            "slot_vaddr": "0x1463608",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeInjectEvent": {
+          "rva": "0xe8623c",
+          "signature": "(Landroid/view/InputEvent;I)Z",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8623c",
+            "file_offset": "0xe8223c",
+            "slot_vaddr": "0x1463620",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeUnitySendMessage": {
+          "rva": "0xe8684c",
+          "signature": "(Ljava/lang/String;Ljava/lang/String;[B)V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8684c",
+            "file_offset": "0xe8284c",
+            "slot_vaddr": "0x1463638",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeIsAutorotationOn": {
+          "rva": "0xe86a18",
+          "signature": "()Z",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86a18",
+            "file_offset": "0xe82a18",
+            "slot_vaddr": "0x1463650",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeMuteMasterAudio": {
+          "rva": "0xe86a78",
+          "signature": "(Z)V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86a78",
+            "file_offset": "0xe82a78",
+            "slot_vaddr": "0x1463668",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeSetLaunchURL": {
+          "rva": "0xe86adc",
+          "signature": "(Ljava/lang/String;)V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86adc",
+            "file_offset": "0xe82adc",
+            "slot_vaddr": "0x1463680",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "permissionResponseToNative": {
+          "rva": "0xe86c14",
+          "signature": "(JZ)V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86c14",
+            "file_offset": "0xe82c14",
+            "slot_vaddr": "0x1463698",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeHidePreservedContent": {
+          "rva": "0xe86c98",
+          "signature": "()V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86c98",
+            "file_offset": "0xe82c98",
+            "slot_vaddr": "0x14636b0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeViewPaddingChanged": {
+          "rva": "0xe86ce8",
+          "signature": "(IIIII)V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86ce8",
+            "file_offset": "0xe82ce8",
+            "slot_vaddr": "0x14636c8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeGetMainWindowIndex": {
+          "rva": "0xe86e74",
+          "signature": "()I",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86e74",
+            "file_offset": "0xe82e74",
+            "slot_vaddr": "0x14636e0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeCrashNow": {
+          "rva": "0xe86ecc",
+          "signature": "()V",
+          "table_id": 8,
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "registration_call_site": "0xe87080",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86ecc",
+            "file_offset": "0xe82ecc",
+            "slot_vaddr": "0x14636f8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayer",
+            "registration_call_site": "0xe87080",
+            "table_rva": "0x14635f0",
+            "table_count": 12,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayer' registered at call-site 0xe87080 in table 0x14635f0"
+          }
+        },
+        "nativeConfigurationChanged": {
+          "rva": "0xe8614c",
+          "signature": "(Landroid/content/res/Configuration;)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8614c",
+            "file_offset": "0xe8214c",
+            "slot_vaddr": "0x1463710",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeRender": {
+          "rva": "0xe861dc",
+          "signature": "()Z",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe861dc",
+            "file_offset": "0xe821dc",
+            "slot_vaddr": "0x1463728",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativePause": {
+          "rva": "0xe85dc4",
+          "signature": "()Z",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85dc4",
+            "file_offset": "0xe81dc4",
+            "slot_vaddr": "0x1463740",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeResume": {
+          "rva": "0xe85e28",
+          "signature": "()V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85e28",
+            "file_offset": "0xe81e28",
+            "slot_vaddr": "0x1463758",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeDone": {
+          "rva": "0xe85ce4",
+          "signature": "()Z",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85ce4",
+            "file_offset": "0xe81ce4",
+            "slot_vaddr": "0x1463770",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeMemoryUsageChanged": {
+          "rva": "0xe85d70",
+          "signature": "(I)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85d70",
+            "file_offset": "0xe81d70",
+            "slot_vaddr": "0x1463788",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeFocusChanged": {
+          "rva": "0xe85ed8",
+          "signature": "(Z)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85ed8",
+            "file_offset": "0xe81ed8",
+            "slot_vaddr": "0x14637a0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeOrientationChanged": {
+          "rva": "0xe86d50",
+          "signature": "(II)V",
+          "table_id": 10,
+          "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+          "registration_call_site": "0xe87258",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86d50",
+            "file_offset": "0xe82d50",
+            "slot_vaddr": "0x14638f0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+            "registration_call_site": "0xe87258",
+            "table_rva": "0x14638f0",
+            "table_count": 2,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForGameActivity' registered at call-site 0xe87258 in table 0x14638f0"
+          }
+        },
+        "nativeRecreateGfxState": {
+          "rva": "0xe85f3c",
+          "signature": "(ILandroid/view/Surface;)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85f3c",
+            "file_offset": "0xe81f3c",
+            "slot_vaddr": "0x14637d0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSendSurfaceChangedEvent": {
+          "rva": "0xe85fa4",
+          "signature": "()V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85fa4",
+            "file_offset": "0xe81fa4",
+            "slot_vaddr": "0x14637e8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeOnApplyWindowInsets": {
+          "rva": "0xe85ff8",
+          "signature": "(Landroid/view/WindowInsets;)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe85ff8",
+            "file_offset": "0xe81ff8",
+            "slot_vaddr": "0x1463800",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeReportKeyboardConfigChanged": {
+          "rva": "0xe867ac",
+          "signature": "()V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe867ac",
+            "file_offset": "0xe827ac",
+            "slot_vaddr": "0x1463818",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSetInputArea": {
+          "rva": "0xe864fc",
+          "signature": "(IIII)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe864fc",
+            "file_offset": "0xe824fc",
+            "slot_vaddr": "0x1463830",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSetKeyboardIsVisible": {
+          "rva": "0xe86584",
+          "signature": "(Z)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86584",
+            "file_offset": "0xe82584",
+            "slot_vaddr": "0x1463848",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSetInputString": {
+          "rva": "0xe865e4",
+          "signature": "(Ljava/lang/String;)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe865e4",
+            "file_offset": "0xe825e4",
+            "slot_vaddr": "0x1463860",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSetInputSelection": {
+          "rva": "0xe8668c",
+          "signature": "(II)V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8668c",
+            "file_offset": "0xe8268c",
+            "slot_vaddr": "0x1463878",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSoftInputClosed": {
+          "rva": "0xe867f4",
+          "signature": "()V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe867f4",
+            "file_offset": "0xe827f4",
+            "slot_vaddr": "0x1463890",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSoftInputCanceled": {
+          "rva": "0xe866fc",
+          "signature": "()V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe866fc",
+            "file_offset": "0xe826fc",
+            "slot_vaddr": "0x14638a8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeSoftInputLostFocus": {
+          "rva": "0xe86754",
+          "signature": "()V",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86754",
+            "file_offset": "0xe82754",
+            "slot_vaddr": "0x14638c0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeGetNoWindowMode": {
+          "rva": "0xe86e04",
+          "signature": "()Z",
+          "table_id": 9,
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "registration_call_site": "0xe8716c",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86e04",
+            "file_offset": "0xe82e04",
+            "slot_vaddr": "0x14638d8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+            "registration_call_site": "0xe8716c",
+            "table_rva": "0x1463710",
+            "table_count": 20,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForActivityOrService' registered at call-site 0xe8716c in table 0x1463710"
+          }
+        },
+        "nativeUnityPlayerSetRunning": {
+          "rva": "0xe86db0",
+          "signature": "(Z)V",
+          "table_id": 10,
+          "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+          "registration_call_site": "0xe87258",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe86db0",
+            "file_offset": "0xe82db0",
+            "slot_vaddr": "0x1463908",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+            "registration_call_site": "0xe87258",
+            "table_rva": "0x14638f0",
+            "table_count": 2,
+            "confidence_reason": "Class 'com/unity3d/player/UnityPlayerForGameActivity' registered at call-site 0xe87258 in table 0x14638f0"
+          }
+        },
+        "AndroidAudioDeviceListChanged": {
+          "rva": "0x85b7d4",
+          "signature": "()V",
+          "table_id": 11,
+          "registered_class": "com/unity3d/player/AudioDeviceObserver",
+          "registration_call_site": "0xe87344",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x85b7d4",
+            "file_offset": "0x8577d4",
+            "slot_vaddr": "0x1463920",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/AudioDeviceObserver",
+            "registration_call_site": "0xe87344",
+            "table_rva": "0x1463920",
+            "table_count": 2,
+            "confidence_reason": "Class 'com/unity3d/player/AudioDeviceObserver' registered at call-site 0xe87344 in table 0x1463920"
+          }
+        },
+        "AndroidAudioLoggingEnabled": {
+          "rva": "0x85b828",
+          "signature": "()Z",
+          "table_id": 11,
+          "registered_class": "com/unity3d/player/AudioDeviceObserver",
+          "registration_call_site": "0xe87344",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x85b828",
+            "file_offset": "0x857828",
+            "slot_vaddr": "0x1463938",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/AudioDeviceObserver",
+            "registration_call_site": "0xe87344",
+            "table_rva": "0x1463920",
+            "table_count": 2,
+            "confidence_reason": "Class 'com/unity3d/player/AudioDeviceObserver' registered at call-site 0xe87344 in table 0x1463920"
+          }
+        },
+        "getRootNodeIds": {
+          "rva": "0xe89120",
+          "signature": "()[I",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe89120",
+            "file_offset": "0xe85120",
+            "slot_vaddr": "0x1463958",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "hitTest": {
+          "rva": "0xe892d0",
+          "signature": "(FF)I",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe892d0",
+            "file_offset": "0xe852d0",
+            "slot_vaddr": "0x1463970",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "populateNodeInfo": {
+          "rva": "0xe89e4c",
+          "signature": "(Landroid/view/accessibility/AccessibilityNodeInfo;ILandroid/view/View;)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe89e4c",
+            "file_offset": "0xe85e4c",
+            "slot_vaddr": "0x1463988",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "isNodeInvokable": {
+          "rva": "0xe8a2d8",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8a2d8",
+            "file_offset": "0xe862d8",
+            "slot_vaddr": "0x14639a0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "isNodeSlider": {
+          "rva": "0xe8a4c4",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8a4c4",
+            "file_offset": "0xe864c4",
+            "slot_vaddr": "0x14639b8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "isNodeScrollable": {
+          "rva": "0xe8a6b0",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8a6b0",
+            "file_offset": "0xe866b0",
+            "slot_vaddr": "0x14639d0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "isNodeDismissable": {
+          "rva": "0xe8a89c",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8a89c",
+            "file_offset": "0xe8689c",
+            "slot_vaddr": "0x14639e8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onNodeFocusChanged": {
+          "rva": "0xe8aa88",
+          "signature": "(IZ)V",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8aa88",
+            "file_offset": "0xe86a88",
+            "slot_vaddr": "0x1463a00",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onNodeInvoked": {
+          "rva": "0xe8ab48",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8ab48",
+            "file_offset": "0xe86b48",
+            "slot_vaddr": "0x1463a18",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onNodeIncremented": {
+          "rva": "0xe8ac18",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8ac18",
+            "file_offset": "0xe86c18",
+            "slot_vaddr": "0x1463a30",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onNodeDecremented": {
+          "rva": "0xe8ace8",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8ace8",
+            "file_offset": "0xe86ce8",
+            "slot_vaddr": "0x1463a48",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onNodeScrolled": {
+          "rva": "0xe8adb8",
+          "signature": "(II)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8adb8",
+            "file_offset": "0xe86db8",
+            "slot_vaddr": "0x1463a60",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onNodeDismissed": {
+          "rva": "0xe8aebc",
+          "signature": "(I)Z",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8aebc",
+            "file_offset": "0xe86ebc",
+            "slot_vaddr": "0x1463a78",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onScreenReaderStatusChanged": {
+          "rva": "0xe8af8c",
+          "signature": "(Z)V",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8af8c",
+            "file_offset": "0xe86f8c",
+            "slot_vaddr": "0x1463a90",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onFontScaleChanged": {
+          "rva": "0xe8b020",
+          "signature": "(F)V",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8b020",
+            "file_offset": "0xe87020",
+            "slot_vaddr": "0x1463aa8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "onClosedCaptioningStatusChanged": {
+          "rva": "0xe8b09c",
+          "signature": "(Z)V",
+          "table_id": 12,
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "registration_call_site": "0xe8b1dc",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe8b09c",
+            "file_offset": "0xe8709c",
+            "slot_vaddr": "0x1463ac0",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+            "registration_call_site": "0xe8b1dc",
+            "table_rva": "0x1463958",
+            "table_count": 16,
+            "confidence_reason": "Class 'com/unity3d/player/UnityAccessibilityDelegate' registered at call-site 0xe8b1dc in table 0x1463958"
+          }
+        },
+        "nativeGetSoftInputType": {
+          "rva": "0xe96460",
+          "signature": "()I",
+          "table_id": 13,
+          "registered_class": "com/unity3d/player/SoftInputProvider",
+          "registration_call_site": "0xe96588",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xe96460",
+            "file_offset": "0xe92460",
+            "slot_vaddr": "0x1463ae8",
+            "segment_flags": "r-x",
+            "registered_class": "com/unity3d/player/SoftInputProvider",
+            "registration_call_site": "0xe96588",
+            "table_rva": "0x1463ae8",
+            "table_count": 1,
+            "confidence_reason": "Class 'com/unity3d/player/SoftInputProvider' registered at call-site 0xe96588 in table 0x1463ae8"
+          }
+        }
+      },
+      "fmod_natives": {
+        "fmodGetInfo": {
+          "rva": "0x108f264",
+          "signature": "(I)I",
+          "table_id": 14,
+          "registered_class": "org/fmod/FMODAudioDevice",
+          "registration_call_site": "0x108e8c8",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x108f264",
+            "file_offset": "0x108b264",
+            "slot_vaddr": "0x146b710",
+            "segment_flags": "r-x",
+            "registered_class": "org/fmod/FMODAudioDevice",
+            "registration_call_site": "0x108e8c8",
+            "table_rva": "0x146b710",
+            "table_count": 3,
+            "confidence_reason": "Class 'org/fmod/FMODAudioDevice' registered at call-site 0x108e8c8 in table 0x146b710"
+          }
+        },
+        "fmodProcess": {
+          "rva": "0x108f32c",
+          "signature": "(Ljava/nio/ByteBuffer;)I",
+          "table_id": 14,
+          "registered_class": "org/fmod/FMODAudioDevice",
+          "registration_call_site": "0x108e8c8",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x108f32c",
+            "file_offset": "0x108b32c",
+            "slot_vaddr": "0x146b728",
+            "segment_flags": "r-x",
+            "registered_class": "org/fmod/FMODAudioDevice",
+            "registration_call_site": "0x108e8c8",
+            "table_rva": "0x146b710",
+            "table_count": 3,
+            "confidence_reason": "Class 'org/fmod/FMODAudioDevice' registered at call-site 0x108e8c8 in table 0x146b710"
+          }
+        },
+        "fmodProcessMicData": {
+          "rva": "0x108f3b8",
+          "signature": "(Ljava/nio/ByteBuffer;I)I",
+          "table_id": 14,
+          "registered_class": "org/fmod/FMODAudioDevice",
+          "registration_call_site": "0x108e8c8",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0x108f3b8",
+            "file_offset": "0x108b3b8",
+            "slot_vaddr": "0x146b740",
+            "segment_flags": "r-x",
+            "registered_class": "org/fmod/FMODAudioDevice",
+            "registration_call_site": "0x108e8c8",
+            "table_rva": "0x146b710",
+            "table_count": 3,
+            "confidence_reason": "Class 'org/fmod/FMODAudioDevice' registered at call-site 0x108e8c8 in table 0x146b710"
+          }
+        }
+      },
+      "total_methods": 71,
+      "call_sites": {
+        "0x14587f8": {
+          "registered_class": "com/unity3d/player/ReflectionHelper",
+          "call_site": "0x4ba6d4",
+          "method_count": 4
+        },
+        "0x1463400": {
+          "registered_class": "com/unity3d/player/GoogleARCoreApi",
+          "call_site": "0xe5ebf4",
+          "method_count": 3
+        },
+        "0x1463450": {
+          "registered_class": "com/unity3d/player/OrientationLockListener",
+          "call_site": "0xe61a18",
+          "method_count": 1
+        },
+        "0x1463480": {
+          "registered_class": "com/unity3d/player/UnityCoreAssetPacksStatusCallbacks",
+          "call_site": "0xe631b8",
+          "method_count": 1
+        },
+        "0x1463498": {
+          "registered_class": "com/unity3d/player/HFPStatus",
+          "call_site": "0xe63a28",
+          "method_count": 2
+        },
+        "0x1463550": {
+          "registered_class": "com/unity3d/player/Camera2Wrapper",
+          "call_site": "0xe7cdcc",
+          "method_count": 3
+        },
+        "0x14635d8": {
+          "registered_class": "com/unity3d/player/AudioVolumeHandler",
+          "call_site": "0xe82b3c",
+          "method_count": 1
+        },
+        "0x14635f0": {
+          "registered_class": "com/unity3d/player/UnityPlayer",
+          "call_site": "0xe87080",
+          "method_count": 12
+        },
+        "0x1463710": {
+          "registered_class": "com/unity3d/player/UnityPlayerForActivityOrService",
+          "call_site": "0xe8716c",
+          "method_count": 20
+        },
+        "0x14638f0": {
+          "registered_class": "com/unity3d/player/UnityPlayerForGameActivity",
+          "call_site": "0xe87258",
+          "method_count": 2
+        },
+        "0x1463920": {
+          "registered_class": "com/unity3d/player/AudioDeviceObserver",
+          "call_site": "0xe87344",
+          "method_count": 2
+        },
+        "0x1463958": {
+          "registered_class": "com/unity3d/player/UnityAccessibilityDelegate",
+          "call_site": "0xe8b1dc",
+          "method_count": 16
+        },
+        "0x1463ae8": {
+          "registered_class": "com/unity3d/player/SoftInputProvider",
+          "call_site": "0xe96588",
+          "method_count": 1
+        },
+        "0x146b710": {
+          "registered_class": "org/fmod/FMODAudioDevice",
+          "call_site": "0x108e8c8",
+          "method_count": 3
+        }
+      }
+    },
+    "memory_region_patches": {
+      "status": "ALL_18_CONFIRMED",
+      "count": 18,
+      "patch_table": [
+        {
+          "index": 1,
+          "rva": "0xfa116c",
+          "from_word": "0x12be0009",
+          "to_word": "0x12bf8009",
+          "desc": "MOV LocalLowLevelAllocator::ReserveMemoryBlock (256MB-1 mask hi)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa116c",
+            "file_offset": "0xf9d16c",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xf9400260",
+              "0x12be0009",
+              "0x7940126a"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 2,
+          "rva": "0xfa117c",
+          "from_word": "0x92648d35",
+          "to_word": "0x92669535",
+          "desc": "LOGIMM LocalLowLevelAllocator::ReserveMemoryBlock (~low28 mask)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa117c",
+            "file_offset": "0xf9d17c",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xf9400008",
+              "0x92648d35",
+              "0x92402942"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 3,
+          "rva": "0xfa19f8",
+          "from_word": "0x52a20008",
+          "to_word": "0x52a08008",
+          "desc": "MOV TLSAllocator::ThreadInitialize (256MB const)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa19f8",
+            "file_offset": "0xf9d9f8",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xa9044ff4",
+              "0x52a20008",
+              "0x52800409"
+            ],
+            "total_candidates_examined": 2,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 4,
+          "rva": "0xfa406c",
+          "from_word": "0x52a20009",
+          "to_word": "0x52a08009",
+          "desc": "MOV BucketAllocator::ctor (256MB const)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa406c",
+            "file_offset": "0xfa006c",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xb9805e68",
+              "0x52a20009",
+              "0xf9144274"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 5,
+          "rva": "0xfa60d8",
+          "from_word": "0x52a20009",
+          "to_word": "0x52a08009",
+          "desc": "MOV DynamicHeapAllocator::ctor (256MB region size)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa60d8",
+            "file_offset": "0xfa20d8",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xf9000269",
+              "0x52a20009",
+              "0x6f00e400"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 6,
+          "rva": "0xfa65a4",
+          "from_word": "0x12be000d",
+          "to_word": "0x12bf800d",
+          "desc": "MOV DynamicHeapAllocator::RequestLargeAllocMemory (256MB-1 mask hi)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa65a4",
+            "file_offset": "0xfa25a4",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xa94f2260",
+              "0x12be000d",
+              "0x52a00802"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 7,
+          "rva": "0xfa65d0",
+          "from_word": "0x92648d36",
+          "to_word": "0x92669536",
+          "desc": "LOGIMM DynamicHeapAllocator::RequestLargeAllocMemory (~low28 mask)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa65d0",
+            "file_offset": "0xfa25d0",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0x8b0b0129",
+              "0x92648d36",
+              "0x79409269"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 8,
+          "rva": "0xfa7d90",
+          "from_word": "0xd35cdc33",
+          "to_word": "0xd35ad433",
+          "desc": "BITF VirtualAllocator::MarkMemoryBlocks (ubfx #28,#28)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa7d90",
+            "file_offset": "0xfa3d90",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0x9240dc28",
+              "0xd35cdc33",
+              "0x8b020108"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 9,
+          "rva": "0xfa7d98",
+          "from_word": "0xd35cfd15",
+          "to_word": "0xd35afd15",
+          "desc": "BITF VirtualAllocator::MarkMemoryBlocks (lsr #28)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa7d98",
+            "file_offset": "0xfa3d98",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0x8b020108",
+              "0xd35cfd15",
+              "0x6b15027f"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 10,
+          "rva": "0xfa7e3c",
+          "from_word": "0x52a20008",
+          "to_word": "0x52a08008",
+          "desc": "MOV VirtualAllocator::ReserveMemoryBlock (256MB const)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa7e3c",
+            "file_offset": "0xfa3e3c",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0x8a090115",
+              "0x52a20008",
+              "0xad0183e0"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 11,
+          "rva": "0xfa806c",
+          "from_word": "0xd35cfc28",
+          "to_word": "0xd35afc28",
+          "desc": "BITF VirtualAllocator::GetMemoryBlockFromPointer (lsr #28)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa806c",
+            "file_offset": "0xfa406c",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xd65f03c0",
+              "0xd35cfc28",
+              "0x530c6d08"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 12,
+          "rva": "0xfa807c",
+          "from_word": "0x92646c28",
+          "to_word": "0x92667428",
+          "desc": "LOGIMM VirtualAllocator::GetMemoryBlockFromPointer (~low28 mask)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa807c",
+            "file_offset": "0xfa407c",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xf9403109",
+              "0x92646c28",
+              "0xb4000389"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 13,
+          "rva": "0xfa8084",
+          "from_word": "0xd35c9c2a",
+          "to_word": "0xd35a942a",
+          "desc": "BITF VirtualAllocator::GetMemoryBlockFromPointer (ubfx #28,#12)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa8084",
+            "file_offset": "0xfa4084",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xb4000389",
+              "0xd35c9c2a",
+              "0xb86a7929"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 14,
+          "rva": "0xfa8098",
+          "from_word": "0xd35cdc29",
+          "to_word": "0xd35ad429",
+          "desc": "BITF VirtualAllocator::GetMemoryBlockFromPointer (ubfx #28,#28)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa8098",
+            "file_offset": "0xfa4098",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0x54000241",
+              "0xd35cdc29",
+              "0xb25c6feb"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 15,
+          "rva": "0xfa809c",
+          "from_word": "0xb25c6feb",
+          "to_word": "0xb25e77eb",
+          "desc": "LOGIMM VirtualAllocator::GetMemoryBlockFromPointer (-255*gran hi)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa809c",
+            "file_offset": "0xfa409c",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xd35cdc29",
+              "0xb25c6feb",
+              "0xf2a2000b"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 16,
+          "rva": "0xfa80a0",
+          "from_word": "0xf2a2000b",
+          "to_word": "0xf2a0800b",
+          "desc": "MOV VirtualAllocator::GetMemoryBlockFromPointer (movk 256MB)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa80a0",
+            "file_offset": "0xfa40a0",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xb25c6feb",
+              "0xf2a2000b",
+              "0x5103fd2c"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 17,
+          "rva": "0xfa80e4",
+          "from_word": "0xcb0a7108",
+          "to_word": "0xcb0a6908",
+          "desc": "SHREG VirtualAllocator::GetMemoryBlockFromPointer (sub lsl #28)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa80e4",
+            "file_offset": "0xfa40e4",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0x7200293f",
+              "0xcb0a7108",
+              "0x9a8803e0"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        },
+        {
+          "index": 18,
+          "rva": "0xfa8108",
+          "from_word": "0xd35c9c29",
+          "to_word": "0xd35a9429",
+          "desc": "BITF VirtualAllocator::GetBlockInfoFromPointer (ubfx #28,#12)",
+          "confidence": "CONFIRMED_STRUCTURAL",
+          "evidence": {
+            "virtual_address": "0xfa8108",
+            "file_offset": "0xfa4108",
+            "segment_flags": "r-x",
+            "fingerprint_3_words": [
+              "0xb4000088",
+              "0xd35c9c29",
+              "0xb8697900"
+            ],
+            "total_candidates_examined": 1,
+            "uniqueness_verified": true
+          }
+        }
+      ]
+    },
+    "il2cpp_jni_globals": {
+      "JNI_OnLoad_rva": "0xc0d5ec",
+      "JavaVM_cache_slot": "0x1de50f8",
+      "JNI_handler_slot": "0x1de50d8",
+      "JNI_handler_fn": "0xc0d630",
+      "confidence": "CONFIRMED_STRUCTURAL",
+      "evidence": {
+        "JavaVM_cache_slot_offset": "0x0",
+        "JNI_handler_slot_offset": "0x0",
+        "JNI_handler_fn_offset": "0xc09630"
+      }
+    },
+    "il2cpp_metadata_methods": {
+      "input_methods": {
+        "GetAxis": {
+          "full_key": "UnityEngine.Input::GetAxis",
+          "rva": "0x1843414",
+          "rid": 20,
+          "return_type": "System.Single",
+          "param_count": 1,
+          "canonical_signature": "System.Single GetAxis(System.String axisName)",
+          "parameters": [
+            {
+              "name": "axisName",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000014",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetAxisRaw": {
+          "full_key": "UnityEngine.Input::GetAxisRaw",
+          "rva": "0x1843584",
+          "rid": 21,
+          "return_type": "System.Single",
+          "param_count": 1,
+          "canonical_signature": "System.Single GetAxisRaw(System.String axisName)",
+          "parameters": [
+            {
+              "name": "axisName",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000015",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetButtonDown": {
+          "full_key": "UnityEngine.Input::GetButtonDown",
+          "rva": "0x18436f4",
+          "rid": 22,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetButtonDown(System.String buttonName)",
+          "parameters": [
+            {
+              "name": "buttonName",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000016",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetKeyInt": {
+          "full_key": "UnityEngine.Input::GetKeyInt",
+          "rva": "0x184386c",
+          "rid": 23,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetKeyInt(UnityEngine.KeyCode key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.KeyCode",
+              "type_index": 16328
+            }
+          ],
+          "token": "0x6000017",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetKeyDownInt": {
+          "full_key": "UnityEngine.Input::GetKeyDownInt",
+          "rva": "0x18438a8",
+          "rid": 24,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetKeyDownInt(UnityEngine.KeyCode key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.KeyCode",
+              "type_index": 16328
+            }
+          ],
+          "token": "0x6000018",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetMouseButton": {
+          "full_key": "UnityEngine.Input::GetMouseButton",
+          "rva": "0x18438e4",
+          "rid": 25,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetMouseButton(System.Int32 button)",
+          "parameters": [
+            {
+              "name": "button",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x6000019",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetMouseButtonDown": {
+          "full_key": "UnityEngine.Input::GetMouseButtonDown",
+          "rva": "0x1843920",
+          "rid": 26,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetMouseButtonDown(System.Int32 button)",
+          "parameters": [
+            {
+              "name": "button",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x600001a",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetMouseButtonUp": {
+          "full_key": "UnityEngine.Input::GetMouseButtonUp",
+          "rva": "0x184395c",
+          "rid": 27,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetMouseButtonUp(System.Int32 button)",
+          "parameters": [
+            {
+              "name": "button",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x600001b",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetTouch": {
+          "full_key": "UnityEngine.Input::GetTouch",
+          "rva": "0x1843998",
+          "rid": 28,
+          "return_type": "UnityEngine.Touch",
+          "param_count": 1,
+          "canonical_signature": "UnityEngine.Touch GetTouch(System.Int32 index)",
+          "parameters": [
+            {
+              "name": "index",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x600001c",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetLastPenContactEvent": {
+          "full_key": "UnityEngine.Input::GetLastPenContactEvent",
+          "rva": "0x1843a4c",
+          "rid": 29,
+          "return_type": "UnityEngine.PenData",
+          "param_count": 0,
+          "canonical_signature": "UnityEngine.PenData GetLastPenContactEvent()",
+          "parameters": [],
+          "token": "0x600001d",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "ClearLastPenContactEvent": {
+          "full_key": "UnityEngine.Input::ClearLastPenContactEvent",
+          "rva": "0x1843aec",
+          "rid": 30,
+          "return_type": "System.Void",
+          "param_count": 0,
+          "canonical_signature": "System.Void ClearLastPenContactEvent()",
+          "parameters": [],
+          "token": "0x600001e",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetKey": {
+          "full_key": "UnityEngine.Input::GetKey",
+          "rva": "0x1843b14",
+          "rid": 31,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetKey(UnityEngine.KeyCode key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.KeyCode",
+              "type_index": 16328
+            }
+          ],
+          "token": "0x600001f",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetKeyDown": {
+          "full_key": "UnityEngine.Input::GetKeyDown",
+          "rva": "0x1843b50",
+          "rid": 32,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean GetKeyDown(UnityEngine.KeyCode key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.KeyCode",
+              "type_index": 16328
+            }
+          ],
+          "token": "0x6000020",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_anyKey": {
+          "full_key": "UnityEngine.Input::get_anyKey",
+          "rva": "0x1843b8c",
+          "rid": 33,
+          "return_type": "System.Boolean",
+          "param_count": 0,
+          "canonical_signature": "System.Boolean get_anyKey()",
+          "parameters": [],
+          "token": "0x6000021",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_mousePosition": {
+          "full_key": "UnityEngine.Input::get_mousePosition",
+          "rva": "0x1843bb4",
+          "rid": 34,
+          "return_type": "UnityEngine.Vector3",
+          "param_count": 0,
+          "canonical_signature": "UnityEngine.Vector3 get_mousePosition()",
+          "parameters": [],
+          "token": "0x6000022",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_mouseScrollDelta": {
+          "full_key": "UnityEngine.Input::get_mouseScrollDelta",
+          "rva": "0x1843c3c",
+          "rid": 35,
+          "return_type": "UnityEngine.Vector2",
+          "param_count": 0,
+          "canonical_signature": "UnityEngine.Vector2 get_mouseScrollDelta()",
+          "parameters": [],
+          "token": "0x6000023",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_imeCompositionMode": {
+          "full_key": "UnityEngine.Input::get_imeCompositionMode",
+          "rva": "0x1843cbc",
+          "rid": 36,
+          "return_type": "UnityEngine.IMECompositionMode",
+          "param_count": 0,
+          "canonical_signature": "UnityEngine.IMECompositionMode get_imeCompositionMode()",
+          "parameters": [],
+          "token": "0x6000024",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "set_imeCompositionMode": {
+          "full_key": "UnityEngine.Input::set_imeCompositionMode",
+          "rva": "0x1843ce4",
+          "rid": 37,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void set_imeCompositionMode(UnityEngine.IMECompositionMode value)",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "UnityEngine.IMECompositionMode",
+              "type_index": 15356
+            }
+          ],
+          "token": "0x6000025",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_compositionString": {
+          "full_key": "UnityEngine.Input::get_compositionString",
+          "rva": "0x1843d20",
+          "rid": 38,
+          "return_type": "System.String",
+          "param_count": 0,
+          "canonical_signature": "System.String get_compositionString()",
+          "parameters": [],
+          "token": "0x6000026",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_compositionCursorPos": {
+          "full_key": "UnityEngine.Input::get_compositionCursorPos",
+          "rva": "0x1843e20",
+          "rid": 39,
+          "return_type": "UnityEngine.Vector2",
+          "param_count": 0,
+          "canonical_signature": "UnityEngine.Vector2 get_compositionCursorPos()",
+          "parameters": [],
+          "token": "0x6000027",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "set_compositionCursorPos": {
+          "full_key": "UnityEngine.Input::set_compositionCursorPos",
+          "rva": "0x1843ea0",
+          "rid": 40,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void set_compositionCursorPos(UnityEngine.Vector2 value)",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "UnityEngine.Vector2",
+              "type_index": 21455
+            }
+          ],
+          "token": "0x6000028",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_simulateTouchEnabled": {
+          "full_key": "UnityEngine.Input::get_simulateTouchEnabled",
+          "rva": "0x1843f1c",
+          "rid": 41,
+          "return_type": "System.Boolean",
+          "param_count": 0,
+          "canonical_signature": "System.Boolean get_simulateTouchEnabled()",
+          "parameters": [],
+          "token": "0x6000029",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetMousePresentInternal": {
+          "full_key": "UnityEngine.Input::GetMousePresentInternal",
+          "rva": "0x1843f64",
+          "rid": 42,
+          "return_type": "System.Boolean",
+          "param_count": 0,
+          "canonical_signature": "System.Boolean GetMousePresentInternal()",
+          "parameters": [],
+          "token": "0x600002a",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetTouchSupportedInternal": {
+          "full_key": "UnityEngine.Input::GetTouchSupportedInternal",
+          "rva": "0x1843f8c",
+          "rid": 43,
+          "return_type": "System.Boolean",
+          "param_count": 0,
+          "canonical_signature": "System.Boolean GetTouchSupportedInternal()",
+          "parameters": [],
+          "token": "0x600002b",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_mousePresent": {
+          "full_key": "UnityEngine.Input::get_mousePresent",
+          "rva": "0x1843fb4",
+          "rid": 44,
+          "return_type": "System.Boolean",
+          "param_count": 0,
+          "canonical_signature": "System.Boolean get_mousePresent()",
+          "parameters": [],
+          "token": "0x600002c",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_touchSupported": {
+          "full_key": "UnityEngine.Input::get_touchSupported",
+          "rva": "0x1844020",
+          "rid": 45,
+          "return_type": "System.Boolean",
+          "param_count": 0,
+          "canonical_signature": "System.Boolean get_touchSupported()",
+          "parameters": [],
+          "token": "0x600002d",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_touchCount": {
+          "full_key": "UnityEngine.Input::get_touchCount",
+          "rva": "0x184408c",
+          "rid": 46,
+          "return_type": "System.Int32",
+          "param_count": 0,
+          "canonical_signature": "System.Int32 get_touchCount()",
+          "parameters": [],
+          "token": "0x600002e",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "set_multiTouchEnabled": {
+          "full_key": "UnityEngine.Input::set_multiTouchEnabled",
+          "rva": "0x18440b4",
+          "rid": 47,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void set_multiTouchEnabled(System.Boolean value)",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "System.Boolean",
+              "type_index": 11902
+            }
+          ],
+          "token": "0x600002f",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetTouch_Injected": {
+          "full_key": "UnityEngine.Input::GetTouch_Injected",
+          "rva": "0x1843a08",
+          "rid": 48,
+          "return_type": "System.Void",
+          "param_count": 2,
+          "canonical_signature": "System.Void GetTouch_Injected(System.Int32 index, UnityEngine.Touch ret)",
+          "parameters": [
+            {
+              "name": "index",
+              "type": "System.Int32",
+              "type_index": 15979
+            },
+            {
+              "name": "ret",
+              "type": "UnityEngine.Touch",
+              "type_index": 9520
+            }
+          ],
+          "token": "0x6000030",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetLastPenContactEvent_Injected": {
+          "full_key": "UnityEngine.Input::GetLastPenContactEvent_Injected",
+          "rva": "0x1843ab0",
+          "rid": 49,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void GetLastPenContactEvent_Injected(UnityEngine.PenData ret)",
+          "parameters": [
+            {
+              "name": "ret",
+              "type": "UnityEngine.PenData",
+              "type_index": 9344
+            }
+          ],
+          "token": "0x6000031",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_mousePosition_Injected": {
+          "full_key": "UnityEngine.Input::get_mousePosition_Injected",
+          "rva": "0x1843c00",
+          "rid": 50,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void get_mousePosition_Injected(UnityEngine.Vector3 ret)",
+          "parameters": [
+            {
+              "name": "ret",
+              "type": "UnityEngine.Vector3",
+              "type_index": 9563
+            }
+          ],
+          "token": "0x6000032",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_mouseScrollDelta_Injected": {
+          "full_key": "UnityEngine.Input::get_mouseScrollDelta_Injected",
+          "rva": "0x1843c80",
+          "rid": 51,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void get_mouseScrollDelta_Injected(UnityEngine.Vector2 ret)",
+          "parameters": [
+            {
+              "name": "ret",
+              "type": "UnityEngine.Vector2",
+              "type_index": 9557
+            }
+          ],
+          "token": "0x6000033",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_compositionString_Injected": {
+          "full_key": "UnityEngine.Input::get_compositionString_Injected",
+          "rva": "0x1843de4",
+          "rid": 52,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void get_compositionString_Injected(UnityEngine.Bindings.ManagedSpanWrapper ret)",
+          "parameters": [
+            {
+              "name": "ret",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9300
+            }
+          ],
+          "token": "0x6000034",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "get_compositionCursorPos_Injected": {
+          "full_key": "UnityEngine.Input::get_compositionCursorPos_Injected",
+          "rva": "0x1843e64",
+          "rid": 53,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void get_compositionCursorPos_Injected(UnityEngine.Vector2 ret)",
+          "parameters": [
+            {
+              "name": "ret",
+              "type": "UnityEngine.Vector2",
+              "type_index": 9557
+            }
+          ],
+          "token": "0x6000035",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "set_compositionCursorPos_Injected": {
+          "full_key": "UnityEngine.Input::set_compositionCursorPos_Injected",
+          "rva": "0x1843ee0",
+          "rid": 54,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void set_compositionCursorPos_Injected(UnityEngine.Vector2 value)",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "UnityEngine.Vector2",
+              "type_index": 9555
+            }
+          ],
+          "token": "0x6000036",
+          "cgm_module": "UnityEngine.InputLegacyModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        }
+      },
+      "playerprefs_methods": {
+        "TrySetInt": {
+          "full_key": "UnityEngine.PlayerPrefs::TrySetInt",
+          "original_name": "TrySetInt",
+          "rva": "0x17ee75c",
+          "rid": 2363,
+          "return_type": "System.Boolean",
+          "param_count": 2,
+          "canonical_signature": "System.Boolean TrySetInt(System.String key, System.Int32 value)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            },
+            {
+              "name": "value",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x600093b",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "TrySetSetString": {
+          "full_key": "UnityEngine.PlayerPrefs::TrySetSetString",
+          "original_name": "TrySetSetString",
+          "rva": "0x17ee91c",
+          "rid": 2364,
+          "return_type": "System.Boolean",
+          "param_count": 2,
+          "canonical_signature": "System.Boolean TrySetSetString(System.String key, System.String value)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            },
+            {
+              "name": "value",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x600093c",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "SetInt": {
+          "full_key": "UnityEngine.PlayerPrefs::SetInt",
+          "original_name": "SetInt",
+          "rva": "0x17eeb9c",
+          "rid": 2365,
+          "return_type": "System.Void",
+          "param_count": 2,
+          "canonical_signature": "System.Void SetInt(System.String key, System.Int32 value)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            },
+            {
+              "name": "value",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x600093d",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetInt2": {
+          "full_key": "UnityEngine.PlayerPrefs::GetInt2",
+          "original_name": "GetInt",
+          "rva": "0x17eebf4",
+          "rid": 2366,
+          "return_type": "System.Int32",
+          "param_count": 2,
+          "canonical_signature": "System.Int32 GetInt(System.String key, System.Int32 defaultValue)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            },
+            {
+              "name": "defaultValue",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x600093e",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetInt1": {
+          "full_key": "UnityEngine.PlayerPrefs::GetInt1",
+          "original_name": "GetInt",
+          "rva": "0x17eedb0",
+          "rid": 2367,
+          "return_type": "System.Int32",
+          "param_count": 1,
+          "canonical_signature": "System.Int32 GetInt(System.String key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x600093f",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "SetString": {
+          "full_key": "UnityEngine.PlayerPrefs::SetString",
+          "original_name": "SetString",
+          "rva": "0x17eedb8",
+          "rid": 2368,
+          "return_type": "System.Void",
+          "param_count": 2,
+          "canonical_signature": "System.Void SetString(System.String key, System.String value)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            },
+            {
+              "name": "value",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000940",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetString2": {
+          "full_key": "UnityEngine.PlayerPrefs::GetString2",
+          "original_name": "GetString",
+          "rva": "0x17eee10",
+          "rid": 2369,
+          "return_type": "System.String",
+          "param_count": 2,
+          "canonical_signature": "System.String GetString(System.String key, System.String defaultValue)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            },
+            {
+              "name": "defaultValue",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000941",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetString1": {
+          "full_key": "UnityEngine.PlayerPrefs::GetString1",
+          "original_name": "GetString",
+          "rva": "0x17ef114",
+          "rid": 2370,
+          "return_type": "System.String",
+          "param_count": 1,
+          "canonical_signature": "System.String GetString(System.String key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000942",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "HasKey": {
+          "full_key": "UnityEngine.PlayerPrefs::HasKey",
+          "original_name": "HasKey",
+          "rva": "0x17ef15c",
+          "rid": 2371,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean HasKey(System.String key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000943",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "DeleteKey": {
+          "full_key": "UnityEngine.PlayerPrefs::DeleteKey",
+          "original_name": "DeleteKey",
+          "rva": "0x17ef30c",
+          "rid": 2372,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void DeleteKey(System.String key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "System.String",
+              "type_index": 19805
+            }
+          ],
+          "token": "0x6000944",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "Save": {
+          "full_key": "UnityEngine.PlayerPrefs::Save",
+          "original_name": "Save",
+          "rva": "0x17ef4b0",
+          "rid": 2373,
+          "return_type": "System.Void",
+          "param_count": 0,
+          "canonical_signature": "System.Void Save()",
+          "parameters": [],
+          "token": "0x6000945",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "TrySetInt_Injected": {
+          "full_key": "UnityEngine.PlayerPrefs::TrySetInt_Injected",
+          "original_name": "TrySetInt_Injected",
+          "rva": "0x17ee8d8",
+          "rid": 2374,
+          "return_type": "System.Boolean",
+          "param_count": 2,
+          "canonical_signature": "System.Boolean TrySetInt_Injected(UnityEngine.Bindings.ManagedSpanWrapper key, System.Int32 value)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            },
+            {
+              "name": "value",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x6000946",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "TrySetSetString_Injected": {
+          "full_key": "UnityEngine.PlayerPrefs::TrySetSetString_Injected",
+          "original_name": "TrySetSetString_Injected",
+          "rva": "0x17eeb58",
+          "rid": 2375,
+          "return_type": "System.Boolean",
+          "param_count": 2,
+          "canonical_signature": "System.Boolean TrySetSetString_Injected(UnityEngine.Bindings.ManagedSpanWrapper key, UnityEngine.Bindings.ManagedSpanWrapper value)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            },
+            {
+              "name": "value",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            }
+          ],
+          "token": "0x6000947",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetInt_Injected": {
+          "full_key": "UnityEngine.PlayerPrefs::GetInt_Injected",
+          "original_name": "GetInt_Injected",
+          "rva": "0x17eed6c",
+          "rid": 2376,
+          "return_type": "System.Int32",
+          "param_count": 2,
+          "canonical_signature": "System.Int32 GetInt_Injected(UnityEngine.Bindings.ManagedSpanWrapper key, System.Int32 defaultValue)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            },
+            {
+              "name": "defaultValue",
+              "type": "System.Int32",
+              "type_index": 15979
+            }
+          ],
+          "token": "0x6000948",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "GetString_Injected": {
+          "full_key": "UnityEngine.PlayerPrefs::GetString_Injected",
+          "original_name": "GetString_Injected",
+          "rva": "0x17ef0c0",
+          "rid": 2377,
+          "return_type": "System.Void",
+          "param_count": 3,
+          "canonical_signature": "System.Void GetString_Injected(UnityEngine.Bindings.ManagedSpanWrapper key, UnityEngine.Bindings.ManagedSpanWrapper defaultValue, UnityEngine.Bindings.ManagedSpanWrapper ret)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            },
+            {
+              "name": "defaultValue",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            },
+            {
+              "name": "ret",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9300
+            }
+          ],
+          "token": "0x6000949",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "HasKey_Injected": {
+          "full_key": "UnityEngine.PlayerPrefs::HasKey_Injected",
+          "original_name": "HasKey_Injected",
+          "rva": "0x17ef2d0",
+          "rid": 2378,
+          "return_type": "System.Boolean",
+          "param_count": 1,
+          "canonical_signature": "System.Boolean HasKey_Injected(UnityEngine.Bindings.ManagedSpanWrapper key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            }
+          ],
+          "token": "0x600094a",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        },
+        "DeleteKey_Injected": {
+          "full_key": "UnityEngine.PlayerPrefs::DeleteKey_Injected",
+          "original_name": "DeleteKey_Injected",
+          "rva": "0x17ef474",
+          "rid": 2379,
+          "return_type": "System.Void",
+          "param_count": 1,
+          "canonical_signature": "System.Void DeleteKey_Injected(UnityEngine.Bindings.ManagedSpanWrapper key)",
+          "parameters": [
+            {
+              "name": "key",
+              "type": "UnityEngine.Bindings.ManagedSpanWrapper",
+              "type_index": 9299
+            }
+          ],
+          "token": "0x600094b",
+          "cgm_module": "UnityEngine.CoreModule.dll",
+          "confidence": "CONFIRMED_STRUCTURAL"
+        }
+      },
+      "evidence": {
+        "code_stripping": {
+          "playerprefs_method_count": 17,
+          "has_set_float": false,
+          "has_get_float": false,
+          "proof": "Unity Engine code stripping removed SetFloat and GetFloat because they are unused in game IL2CPP assemblies."
+        },
+        "abi_get_touch": {
+          "rva": "0x1843998",
+          "indirect_result_register": "x8 (AAPCS64 value-type return buffer saved to x19)",
+          "return_struct": "UnityEngine.Touch (size 0x44 / 68 bytes)",
+          "index_parameter_register": "w0 (int32 touch index)",
+          "memcpy_plt_target": "0x1af5f30",
+          "memcpy_resolved_symbol": "memcpy",
+          "verified_in_disassembly": true,
+          "disassembly_proof": [
+            "0x18439e8: mov x1, sp",
+            "0x18439ec: mov x0, x19",
+            "0x18439f0: mov w2, #0x44",
+            "0x18439f4: bl #0x1af5f30",
+            "0x18439f8: ldp x20, x19, [sp, #0x60]",
+            "0x18439fc: ldp x30, x21, [sp, #0x50]",
+            "0x1843a00: add sp, sp, #0x70",
+            "0x1843a04: ret "
+          ]
+        },
+        "il2cpp_abi": {
+          "calling_convention": "AAPCS64 + IL2CPP hidden MethodInfo*",
+          "hidden_method_info_rule": "In IL2CPP ARM64 generated code, every managed method receives a hidden 'const MethodInfo*' pointer as the last parameter. For static methods: f(arg0, arg1, ..., MethodInfo* method). For instance methods: f(this, arg0, arg1, ..., MethodInfo* method). In internal calls between IL2CPP methods, the MethodInfo* is passed in the next available general-purpose argument register (e.g., x2 for 2-arg static, x1 for 1-arg static). Horizon OS native wrappers can pass NULL if the method body does not dereference MethodInfo (or pass the resolved MethodInfo* for safety).",
+          "value_type_return_rule": "AAPCS64 requires structs larger than 16 bytes (or non-HFA) to be returned indirectly via caller-allocated buffer whose pointer is passed in register x8. Verified in Input.GetTouch (UnityEngine.Touch is 0x44 / 68 bytes; x8 is preserved in x19, then passed in x0 to memcpy).",
+          "touch_struct_size_bytes": 68,
+          "touch_struct_size_hex": "0x44"
+        }
+      }
+    },
+    "timemanager_clock": {
+      "entry_rva": "0xbbf058",
+      "body_rva": "0xbbf07c",
+      "field_frame_count": "0x160 (u64)",
+      "field_aux": "0x168 (u32)",
+      "field_pause": "0x1a8 (u8)",
+      "confidence": "CONFIRMED_SEMANTIC",
+      "evidence": {
+        "virtual_address": "0xbbf058",
+        "file_offset": "0xbbb058",
+        "body_file_offset": "0xbbb07c",
+        "segment_flags": "r-x",
+        "vtable_relocation_slot": "0x1427200",
+        "matched_instructions_count": 14,
+        "uniqueness_verified": true
+      }
+    },
+    "choreographer_vsync": {
+      "status": "UNRESOLVED_REQUIRES_HARDWARE_VALIDATION",
+      "confidence": "UNVERIFIED_RUNTIME_HOOK",
+      "notes": "Choreographer and Vsync presentation hooks deferred to runtime hardware gate. No hardcoded RVAs emitted in production header.",
+      "emitted_offsets": null
+    }
+  },
+  "errors": []
+}

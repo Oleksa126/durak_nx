@@ -1,0 +1,25 @@
+# Durak NX Toolchain Lock
+# Format: Key-Value / INI
+
+[container]
+image = "devkitpro/devkita64"
+digest = "sha256:1fc388c3a0d34bd2045a6dadcb1020e069d5f876a187fd705de14b4440c00282"
+pinned_reference = "devkitpro/devkita64@sha256:1fc388c3a0d34bd2045a6dadcb1020e069d5f876a187fd705de14b4440c00282"
+
+[compiler]
+target = "aarch64-none-elf"
+gcc_version = "15.2.0"
+package_gcc = "devkita64-gcc 15.2.0-7"
+package_devkita64 = "devkitA64 r29.2-1"
+
+[libraries]
+libnx = "4.12.0-1"
+switch_tools = "1.13.1-1"
+newlib = "4.6.0.20260123"
+
+[target_platform]
+architecture = "armv8-a+crc+crypto"
+tune = "cortex-a57"
+abi = "lp64"
+pie = true
+os = "Horizon OS (Nintendo Switch)"
